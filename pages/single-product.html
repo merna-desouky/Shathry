@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../assets/store-logo.svg" />
+
+        <title>Shathry</title>
+        <!-- bootstrap style -->
+        <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+            integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
+            crossorigin="anonymous"
+        />
+        <!-- bootstrap style -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="../style.css?v=456" />
+    </head>
+    <body>
+        <!-- start of top bar -->
+        <div class="devolum-top-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header">
+                            <div class="dropdown">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="../assets/egy-flag.svg"
+                                        alt="flag"
+                                    />
+                                    Ar
+                                </button>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuButton1"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="headlines">
+                                <a href="#" class="me-4">تواصل معنا</a>
+                                <a href="#"> من نحن؟</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of top bar -->
+
+        <!-- start of bottom bar -->
+        <div class="devolum-bottom-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bottom-header">
+                            <span onclick="openNav()" class="mob-menu"
+                                ><i class="fa-solid fa-bars"></i
+                            ></span>
+                            <a class="logo" href="../index.html">
+                                <img
+                                    src="../assets/store-logo.svg"
+                                    alt="logo"
+                                />
+                            </a>
+                            <div class="search">
+                                <input
+                                    id="searchbar"
+                                    autocomplete="off"
+                                    onkeyup="search()"
+                                    type="text"
+                                    name="search"
+                                    placeholder="ابحث"
+                                />
+                                <div id="list"></div>
+
+                                <button>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            <div class="myicons">
+                                <a href="#"
+                                    ><i class="fa-regular fa-user"></i
+                                    ><span> تسجيل دخول</span></a
+                                ><a href="#"
+                                    ><i class="fa-regular fa-heart"></i>
+                                    <span>المفضلة</span>
+                                </a>
+                                <a href="#"
+                                    ><img src="../assets/cart.svg" alt="cart" />
+                                    <span>السلة</span>
+                                    <span class="counter">44</span>
+                                </a>
+                            </div>
+                            <a class="mob-search" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i
+                            ></a>
+                        </div>
+                        <div
+                            id="mySidenav"
+                            class="sidenav"
+                            style="transform: translateX(100%)"
+                        >
+                            <div class="topbar">
+                                <!-- <a href="./index.html" class="logo"
+                                    ><img
+                                        src="/asstes/hvIgSd2n9hLwq2QX2FntKqWsN7Qnq4pC8HvDufbu 1.svg"
+                                /></a> -->
+                                <h5>الاقسام</h5>
+                                <a
+                                    href="javascript:void(0)"
+                                    class="closebtn"
+                                    onclick="closeNav()"
+                                    ><i class="fa-solid fa-xmark"></i
+                                ></a>
+                            </div>
+                            <div class="links">
+                                <ul class="list-unstyled ps-0">
+                                    <li class="mb-1">
+                                        <a href="../index.html">
+                                            <button
+                                                class="btn btn-toggle align-items-center rounded collapsed"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#home-collapse"
+                                                aria-expanded="false"
+                                            >
+                                                الرئيسية
+                                            </button></a
+                                        >
+                                    </li>
+                                    <li class="mb-1">
+                                        <a>
+                                            <button
+                                                class="btn btn-toggle align-items-center rounded collapsed"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#dashboard-collapse"
+                                                aria-expanded="true"
+                                            >
+                                                من نحن
+                                                <i
+                                                    class="fa-solid fa-arrow-left"
+                                                ></i></button
+                                        ></a>
+                                        <div
+                                            class="collapse"
+                                            id="dashboard-collapse"
+                                            style=""
+                                        >
+                                            <ul
+                                                class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                                            >
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="./pages/brief.html"
+                                                        >نبذة عننا</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="./pages/managers.html"
+                                                        >كلمة رئيس مجلس
+                                                        الإدارة</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="./pages/timeline.html"
+                                                        >مسيرتنا</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="./pages/products.html">
+                                            <button
+                                                class="btn btn-toggle align-items-center rounded collapsed"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#orders-collapse"
+                                                aria-expanded="false"
+                                            >
+                                                منتجاتنا
+                                            </button></a
+                                        >
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="./pages/company.html">
+                                            <button
+                                                class="btn btn-toggle align-items-center rounded collapsed"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#account-collapse"
+                                                aria-expanded="false"
+                                            >
+                                                شركاتنا
+                                            </button></a
+                                        >
+                                    </li>
+                                    <li class="mb-1">
+                                        <a>
+                                            <button
+                                                class="btn btn-toggle align-items-center rounded collapsed"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#account-collapse"
+                                                aria-expanded="false"
+                                            >
+                                                المركز الاعلامي
+                                                <i
+                                                    class="fa-solid fa-arrow-left"
+                                                ></i></button
+                                        ></a>
+                                        <div
+                                            class="collapse"
+                                            id="account-collapse"
+                                        >
+                                            <ul
+                                                class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                                            >
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="./pages/notes.html"
+                                                        >المدونة</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="./pages/magazine.html"
+                                                        >المجلة</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="./pages/brochure.html"
+                                                        >البورشرات</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bottombar">
+                                <div>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    <i class="fa-brands fa-square-twitter"></i
+                                    ><i class="fa-brands fa-square-whatsapp"></i
+                                    ><i class="fa-solid fa-square-phone"></i>
+                                </div>
+                                <p>جميع الحقوق محفوظه لدي الفنار جروب</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of bottom bar -->
+
+        <!-- start of categories -->
+        <section class="devolum-categories">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="categories">
+                            <li class="catg-title">
+                                <a href="#"> العناية الشخصية </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a
+                                            class="item-collapse collapsed"
+                                            data-bs-toggle="collapse"
+                                            href="#collapseExample"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="collapseExample"
+                                        >
+                                            سبليت
+                                        </a>
+                                        <div
+                                            class="collapse"
+                                            id="collapseExample"
+                                        >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        class="item-collapse collapsed"
+                                                        data-bs-toggle="collapse"
+                                                        href="#collapseExample2"
+                                                        role="button"
+                                                        aria-expanded="false"
+                                                        aria-controls="collapseExample2"
+                                                    >
+                                                        سبليت
+                                                    </a>
+                                                    <div
+                                                        class="collapse"
+                                                        id="collapseExample2"
+                                                    >
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    مكيفات
+                                                                    دولابي</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    مكيفات
+                                                                    دولابي</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >كاسيت
+                                                                    ومخفي</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    مراوح
+                                                                    ومبردات
+                                                                    هواء</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        مكيفات دولابي</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        مكيفات دولابي</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#">كاسيت ومخفي</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        مراوح ومبردات هواء</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catg-title">
+                                <a href="#"> جميع المنتجات </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a class="item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="catg-title">
+                                <a href="#"> مكيفات </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a class="item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catg-title">
+                                <a href="#"> شاشات وصوتيات </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a class="item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catg-title">
+                                <a href="#"> الإلكترونيات </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a class="item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catg-title">
+                                <a href="#"> الاجهزة المنزلية </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a class="item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catg-title">
+                                <a href="#"> اجهزة منزلية صغيرة </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a class="item" href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catg-title">
+                                <a href="#"> اجهزة المطبخ </a>
+                                <ul class="drop-menu">
+                                    <li>
+                                        <a
+                                            class="item-collapse collapsed"
+                                            data-bs-toggle="collapse"
+                                            href="#collapseExample1"
+                                            role="button"
+                                            aria-expanded="false"
+                                            aria-controls="collapseExample"
+                                        >
+                                            سبليت
+                                        </a>
+                                        <div
+                                            class="collapse"
+                                            id="collapseExample1"
+                                        >
+                                            <ul>
+                                                <li>شباك</li>
+                                                <li>مكيفات دولابي</li>
+                                                <li>كاسيت ومخفي</li>
+                                                <li>مراوح ومبردات هواء</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of categories -->
+
+        <!-- start of bread crumb -->
+        <div class="devolum-breadcrumb">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mybreadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">الرئيسية</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">مكيفات</a>
+                                </li>
+                                <li
+                                    class="breadcrumb-item active"
+                                    aria-current="page"
+                                >
+                                    مكيف سبيليت ميديا ايليت 12 حار بارد12,000
+                                    (H/C) م/MSTE12HRN2AB4
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of bread crumb -->
+
+        <section class="devolum-single-product">
+            <div class="container-fluid">
+                <div class="row gy-lg-0 gy-5">
+                    <div class="col-lg-5">
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="content-of-single-product">
+                            <div class="top-bar mb-4">
+                                <a href="#"
+                                    ><i class="fa-brands fa-whatsapp"></i> تحتاج
+                                    مساعدة؟
+                                </a>
+                                <div class="counter">
+                                    <div class="count-card">
+                                        <span class="number seconds"></span>
+                                        <span>Seconds</span>
+                                    </div>
+                                    <div class="count-card">
+                                        <span class="number minutes"></span>
+                                        <span>Minutes</span>
+                                    </div>
+
+                                    <div class="count-card">
+                                        <span class="number hours"></span>
+                                        <span>Hours</span>
+                                    </div>
+                                    <div class="count-card">
+                                        <span class="number days"></span>
+                                        <span>Days</span>
+                                    </div>
+                                    <div class="expire-msg">Expired</div>
+                                </div>
+                            </div>
+                            <div class="title mb-4">
+                                <div>
+                                    <h4>
+                                        مكيف سبيليت ميديا ايليت 12 حار
+                                        بارد12,000 (H/C) م/MSTE12HRN2AB4
+                                    </h4>
+                                    <span
+                                        >مكيف سبيليت ميديا ايليت 12 حار
+                                        بارد12,000 (H/C) م/MSTE12HRN2AB4</span
+                                    >
+                                </div>
+                                <a href="#">
+                                    <i class="fa-solid fa-share-nodes"></i
+                                ></a>
+                            </div>
+                            <div class="sold-by mb-4">
+                                <span class="info-type">تباع من قبل :</span>
+                                <span>ميديا</span>
+                            </div>
+                            <div class="color mb-4">
+                                <span class="info-type"> اللون :</span>
+                                <input
+                                    type="checkbox"
+                                    id="vehicle1"
+                                    name="vehicle1"
+                                    value="Bike"
+                                />
+                                <label for="vehicle1"></label>
+                                <input
+                                    type="checkbox"
+                                    id="vehicle2"
+                                    name="vehicle2"
+                                    value="Bike"
+                                />
+                                <label for="vehicle2"> </label>
+                                <input
+                                    type="checkbox"
+                                    id="vehicle3"
+                                    name="vehicle3"
+                                    value="Bike"
+                                />
+                                <label for="vehicle3"> </label>
+                            </div>
+                            <div class="size mb-4">
+                                <label for="size" class="info-type">
+                                    الحجم :
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                    id="size"
+                                    name="size"
+                                >
+                                    <option value="volvo">1.25 حصان</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="service-type mb-4">
+                                <span class="info-type">اختر نوع الخدمة :</span>
+                                <div class="my-checkbox">
+                                    <input
+                                        type="checkbox"
+                                        id="vehicle1"
+                                        name="vehicle1"
+                                        value="Bike"
+                                    />
+                                    <label for="vehicle1"
+                                        >تركيب + 150 ر.س</label
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        id="vehicle2"
+                                        name="vehicle2"
+                                        value="Car"
+                                    />
+                                    <label for="vehicle2">
+                                        تركيب + 150 ر.س</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="quantity mb-4">
+                                <span class="info-type">الكمية : </span>
+                                <button id="minus-btn">-</button>
+
+                                <div id="count">0</div>
+
+                                <button id="plus-btn">+</button>
+                            </div>
+                            <div class="price mb-4">
+                                <span class="info-type">السعر :</span>
+                                <div class="price-number">
+                                    <span class="number">2999 ر.س</span>
+                                    <span class="sale"><s>2999 ر.س</s></span>
+                                </div>
+
+                                <div class="mybtns">
+                                    <a class="add-to-cart-btn" href="#">
+                                        اضف الي العربة
+                                    </a>
+                                    <a class="add-to-fav-btn" href="#">
+                                        اضف الي المفضلة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start of info and reviews section -->
+        <section class="info-and-reviews">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mytabs mb-4">
+                            <ul
+                                class="nav nav-pills mb-3"
+                                id="pills-tab"
+                                role="tablist"
+                            >
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="pills-description-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-description"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-description"
+                                        aria-selected="true"
+                                    >
+                                        الوصف
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-info-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-info"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-info"
+                                        aria-selected="false"
+                                    >
+                                        معلومات تقنية
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-reviews-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-reviews"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-reviews"
+                                        aria-selected="false"
+                                    >
+                                        التقييمات والتعليقات (6)
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div
+                                class="tab-pane fade show active"
+                                id="pills-description"
+                                role="tabpanel"
+                                aria-labelledby="pills-description-tab"
+                            >
+                                <div class="content">
+                                    <div class="myvideo">
+                                        <video
+                                            poster="../assets/video.png"
+                                            controls
+                                            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                        ></video>
+                                        <div class="information">
+                                            <span
+                                                >العلامة التجارية : ميديا</span
+                                            >
+                                            <span
+                                                >النوع : مكيف اسبليت جداري</span
+                                            >
+                                            <span>حار/ بارد</span>
+                                            <span>قدرة 11800 وحدة</span>
+                                            <span>إيليت</span>
+                                            <span>موفر للطاقة</span>
+                                            <span>فريون 410</span>
+                                            <span>موديل : MSTE12HRN2AB4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="pills-info"
+                                role="tabpanel"
+                                aria-labelledby="pills-info-tab"
+                            >
+                                <div class="content">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2">
+                                                    معلومات عامة
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>SKU</td>
+                                                <td>111101121250006</td>
+                                            </tr>
+                                            <tr>
+                                                <td>التصنيف</td>
+                                                <td>مكيفات</td>
+                                            </tr>
+                                            <tr>
+                                                <td>الشركه</td>
+                                                <td>ميديا</td>
+                                            </tr>
+                                            <tr>
+                                                <td>تصنيف فرعي</td>
+                                                <td>سبليت</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="pills-reviews"
+                                role="tabpanel"
+                                aria-labelledby="pills-reviews-tab"
+                            >
+                                <div class="content">
+                                    <div class="all-comments">
+                                        <div class="row gy-lg-0 gy-5">
+                                            <div class="col-lg-7">
+                                                <div class="comments">
+                                                    <div class="rating">
+                                                        <span class="percentage"
+                                                            >3.5</span
+                                                        >
+                                                        <span
+                                                            class="fa fa-star checked"
+                                                        ></span>
+                                                        <span
+                                                            class="fa fa-star checked"
+                                                        ></span>
+                                                        <span
+                                                            class="fa fa-star checked"
+                                                        ></span>
+                                                        <span
+                                                            class="fa fa-star"
+                                                        ></span>
+                                                        <span
+                                                            class="fa fa-star"
+                                                        ></span>
+                                                        <span
+                                                            class="number-of-reviews"
+                                                            >(30 تقييم)</span
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="swiper mySwiper5"
+                                                    >
+                                                        <div
+                                                            class="swiper-wrapper"
+                                                        >
+                                                            <div
+                                                                class="swiper-slide"
+                                                            >
+                                                                <div
+                                                                    class="customer-name"
+                                                                >
+                                                                    <span
+                                                                        class="my-name"
+                                                                        >ايمان
+                                                                        المحمدي</span
+                                                                    ><span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star"
+                                                                        ></span
+                                                                    ></span>
+                                                                </div>
+                                                                <p>
+                                                                    هذا النص هو
+                                                                    مثال لنص
+                                                                    يمكن أن
+                                                                    يستبدل في
+                                                                    نفس المساحة،
+                                                                    لقد تم توليد
+                                                                    هذا النص من
+                                                                    مولد النص
+                                                                    العربى،
+                                                                </p>
+                                                            </div>
+                                                            <div
+                                                                class="swiper-slide"
+                                                            >
+                                                                <div
+                                                                    class="customer-name"
+                                                                >
+                                                                    <span
+                                                                        class="my-name"
+                                                                        >ايمان
+                                                                        المحمدي</span
+                                                                    ><span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star"
+                                                                        ></span
+                                                                    ></span>
+                                                                </div>
+                                                                <p>
+                                                                    هذا النص هو
+                                                                    مثال لنص
+                                                                    يمكن أن
+                                                                    يستبدل في
+                                                                    نفس المساحة،
+                                                                    لقد تم توليد
+                                                                    هذا النص من
+                                                                    مولد النص
+                                                                    العربى،
+                                                                </p>
+                                                            </div>
+                                                            <div
+                                                                class="swiper-slide"
+                                                            >
+                                                                <div
+                                                                    class="customer-name"
+                                                                >
+                                                                    <span
+                                                                        class="my-name"
+                                                                        >ايمان
+                                                                        المحمدي</span
+                                                                    ><span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star checked"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star"
+                                                                        ></span>
+                                                                        <span
+                                                                            class="fa fa-star"
+                                                                        ></span
+                                                                    ></span>
+                                                                </div>
+                                                                <p>
+                                                                    هذا النص هو
+                                                                    مثال لنص
+                                                                    يمكن أن
+                                                                    يستبدل في
+                                                                    نفس المساحة،
+                                                                    لقد تم توليد
+                                                                    هذا النص من
+                                                                    مولد النص
+                                                                    العربى،
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="swiper-pagination"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="rating-bar">
+                                                    <!-- <p class="summary"></p>
+                                                    <hr /> -->
+
+                                                    <div class="bar">
+                                                        <div class="side">
+                                                            <div>1/5</div>
+                                                        </div>
+                                                        <div class="middle">
+                                                            <div
+                                                                class="bar-container"
+                                                            >
+                                                                <div
+                                                                    class="bar-5"
+                                                                ></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="side right">
+                                                            <div>
+                                                                (3 تقيمات)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="side">
+                                                            <div>2/5</div>
+                                                        </div>
+                                                        <div class="middle">
+                                                            <div
+                                                                class="bar-container"
+                                                            >
+                                                                <div
+                                                                    class="bar-4"
+                                                                ></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="side right">
+                                                            <div>
+                                                                (6 تقييمات)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="side">
+                                                            <div>3/5</div>
+                                                        </div>
+                                                        <div class="middle">
+                                                            <div
+                                                                class="bar-container"
+                                                            >
+                                                                <div
+                                                                    class="bar-3"
+                                                                ></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="side right">
+                                                            <div>
+                                                                (5 تقييمات)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="side">
+                                                            <div>4/5</div>
+                                                        </div>
+                                                        <div class="middle">
+                                                            <div
+                                                                class="bar-container"
+                                                            >
+                                                                <div
+                                                                    class="bar-2"
+                                                                ></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="side right">
+                                                            <div>
+                                                                (7 تقييمات)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="side">
+                                                            5/5
+                                                        </div>
+                                                        <div class="middle">
+                                                            <div
+                                                                class="bar-container"
+                                                            >
+                                                                <div
+                                                                    class="bar-1"
+                                                                ></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="side right">
+                                                            (10 تقييمات)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <button
+                                                    class="add-comment mt-4"
+                                                    href="#"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                >
+                                                    اضافة تعليق
+                                                </button>
+                                                <div
+                                                    class="modal fade"
+                                                    id="exampleModal"
+                                                    tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel"
+                                                    aria-hidden="true"
+                                                >
+                                                    <div
+                                                        class="modal-dialog modal-lg"
+                                                    >
+                                                        <div
+                                                            class="modal-content"
+                                                        >
+                                                            <div
+                                                                class="modal-body"
+                                                            >
+                                                                <h4
+                                                                    class="mb-3"
+                                                                >
+                                                                    اضافة تعلييق
+                                                                </h4>
+                                                                <span
+                                                                    >مكيف سبيليت
+                                                                    ميديا ايليت
+                                                                    12 حار
+                                                                    بارد12,000
+                                                                    (H/C)
+                                                                    م/MSTE12HRN2AB4</span
+                                                                >
+                                                                <div
+                                                                    class="myinput"
+                                                                >
+                                                                    <label
+                                                                        for="reviews"
+                                                                        >عدد
+                                                                        التقييم</label
+                                                                    >
+                                                                    <select
+                                                                        class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        name="reviews"
+                                                                        id="reviews"
+                                                                    >
+                                                                        <option
+                                                                            selected
+                                                                        >
+                                                                            1
+                                                                        </option>
+                                                                        <option
+                                                                            value="2"
+                                                                        >
+                                                                            2
+                                                                        </option>
+                                                                        <option
+                                                                            value="3"
+                                                                        >
+                                                                            3
+                                                                        </option>
+                                                                        <option
+                                                                            value="4"
+                                                                        >
+                                                                            4
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                                <div
+                                                                    class="myinput"
+                                                                >
+                                                                    <label
+                                                                        for="comment"
+                                                                        >التعليق</label
+                                                                    >
+                                                                    <textarea
+                                                                        id="comment"
+                                                                        name="comment"
+                                                                        rows="4"
+                                                                        cols="50"
+                                                                        placeholder="اضف التعليق"
+                                                                    ></textarea>
+                                                                </div>
+                                                                <div
+                                                                    class="send-btn"
+                                                                >
+                                                                    <a href="#"
+                                                                        >ارسال</a
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of info and reviews section -->
+
+        <!-- start row of categories -->
+        <section class="devolum-categories-view">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="headline">
+                            <h4>مكيفات</h4>
+                            <a href="all-products.html"
+                                >مشاهدة الكل<i
+                                    class="fa-solid fa-chevron-left"
+                                ></i
+                            ></a>
+                        </div>
+                        <div class="catg-content">
+                            <div class="row justify-content-between gy-5">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="catg-card">
+                                        <div class="content">
+                                            <div class="img-product">
+                                                <img
+                                                    src="../assets/product-img.svg"
+                                                    alt="product"
+                                                />
+                                                <div class="discount">50%</div>
+                                            </div>
+                                            <div class="description">
+                                                <span class="info"
+                                                    >مكيف هاير 22000 وحدة سبليت
+                                                    حار
+                                                    بار-HSU-24HPB13/RT(T3)F</span
+                                                >
+                                                <span
+                                                    ><span class="price"
+                                                        >4099 ر.س</span
+                                                    >
+                                                    <span class="sale"
+                                                        ><s>2999 ر.س</s></span
+                                                    >
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="my-btns">
+                                            <a href="#">
+                                                <button
+                                                    class="add-to-cart-btn mb-2"
+                                                >
+                                                    <img
+                                                        src="../assets/cart.svg"
+                                                        alt="cart"
+                                                    />
+                                                    اضف الي العربة
+                                                </button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="add-to-fav-btn">
+                                                    <i
+                                                        class="fa-regular fa-heart"
+                                                    ></i>
+                                                    اضف الي المفضلة
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="catg-card">
+                                        <div class="content">
+                                            <div class="img-product">
+                                                <img
+                                                    src="../assets/product-img.svg"
+                                                    alt="product"
+                                                />
+                                            </div>
+                                            <div class="description">
+                                                <span class="info"
+                                                    >مكيف هاير 22000 وحدة سبليت
+                                                    حار
+                                                    بار-HSU-24HPB13/RT(T3)F</span
+                                                >
+                                                <span
+                                                    ><span class="price"
+                                                        >4099 ر.س</span
+                                                    >
+                                                    <span class="sale"
+                                                        ><s>2999 ر.س</s></span
+                                                    >
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="my-btns">
+                                            <a href="#">
+                                                <button
+                                                    class="add-to-cart-btn mb-2"
+                                                >
+                                                    <img
+                                                        src="../assets/cart.svg"
+                                                        alt="cart"
+                                                    />
+                                                    اضف الي العربة
+                                                </button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="add-to-fav-btn">
+                                                    <i
+                                                        class="fa-regular fa-heart"
+                                                    ></i>
+                                                    اضف الي المفضلة
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="catg-card">
+                                        <div class="content">
+                                            <div class="img-product">
+                                                <img
+                                                    src="../assets/product-img.svg"
+                                                    alt="product"
+                                                />
+                                                <div class="discount">50%</div>
+                                            </div>
+                                            <div class="description">
+                                                <span class="info"
+                                                    >مكيف هاير 22000 وحدة سبليت
+                                                    حار
+                                                    بار-HSU-24HPB13/RT(T3)F</span
+                                                >
+                                                <span
+                                                    ><span class="price"
+                                                        >4099 ر.س</span
+                                                    >
+                                                    <span class="sale"
+                                                        ><s>2999 ر.س</s></span
+                                                    >
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="my-btns">
+                                            <a href="#">
+                                                <button
+                                                    class="add-to-cart-btn mb-2"
+                                                >
+                                                    <img
+                                                        src="../assets/cart.svg"
+                                                        alt="cart"
+                                                    />
+                                                    اضف الي العربة
+                                                </button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="add-to-fav-btn">
+                                                    <i
+                                                        class="fa-regular fa-heart"
+                                                    ></i>
+                                                    اضف الي المفضلة
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="catg-card">
+                                        <div class="content">
+                                            <div class="img-product">
+                                                <img
+                                                    src="../assets/product-img.svg"
+                                                    alt="product"
+                                                />
+                                            </div>
+                                            <div class="description">
+                                                <span class="info"
+                                                    >مكيف هاير 22000 وحدة سبليت
+                                                    حار
+                                                    بار-HSU-24HPB13/RT(T3)F</span
+                                                >
+                                                <span
+                                                    ><span class="price"
+                                                        >4099 ر.س</span
+                                                    >
+                                                    <span class="sale"
+                                                        ><s>2999 ر.س</s></span
+                                                    >
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="my-btns">
+                                            <a href="#">
+                                                <button
+                                                    class="add-to-cart-btn mb-2"
+                                                >
+                                                    <img
+                                                        src="../assets/cart.svg"
+                                                        alt="cart"
+                                                    />
+                                                    اضف الي العربة
+                                                </button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="add-to-fav-btn">
+                                                    <i
+                                                        class="fa-regular fa-heart"
+                                                    ></i>
+                                                    اضف الي المفضلة
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end row of categories -->
+
+        <!-- start of footer -->
+        <div class="devolum-footer">
+            <div class="container-fluid">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="content">
+                            <a href="#" class="mb-4"
+                                ><img src="../assets/store-logo.svg" alt="logo"
+                            /></a>
+                            <p class="mb-5">
+                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                المساحة، لقد تم توليد هذا النص من مولد النص
+                                العربى،
+                            </p>
+                            <div class="social-icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="content">
+                            <h6 class="mb-4">من نحن؟</h6>
+                            <a href="#"> من نحن؟ </a>
+                            <a href="#">سياسة الاستبدال والاسترجاع</a>
+                            <a href="#">تواصل معنا</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="content">
+                            <h6 class="mb-4">التصنيفات</h6>
+                            <a href="#"> مكيفات</a>
+                            <a href="#">شاشات وصوتيات</a>
+                            <a href="#">الاجهزة المنزلية</a>
+                            <a href="#">اجهزة منزلية صغيرة</a>
+                            <a href="#">اجهزة المطبخ</a>
+                            <a href="#">العناية الشخصية</a>
+                            <a href="#">الإلكترونيات</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="content">
+                            <h6 class="mb-4">معلومات اخرى</h6>
+                            <a href="#"> الرقم الضريبي: 310659871400003</a>
+                            <a href="#">اتصل بنا: 98410011443</a>
+                            <a href="#">البريد الإلكتروني: test@test.com</a>
+                            <div class="join mt-4 mb-4">
+                                <input placeholder="البريد الإلكتروني " /><i
+                                    class="fa-regular fa-envelope"
+                                ></i>
+                                <button class="join-btn">اشتراك</button>
+                            </div>
+                            <div class="payment-methods">
+                                <img
+                                    src="../assets/visa-logo.svg"
+                                    alt="visa"
+                                /><img
+                                    src="../assets/mada-logo.svg"
+                                    alt="mada"
+                                /><img
+                                    src="../assets/mastercard-logo.svg"
+                                    alt="mastercard"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyrights">
+                            <div>
+                                جميع الحقوق محفوطة لدينا: <span>الشثري</span>
+                            </div>
+                            <div>تصميم وتطوير: <span>ديفوليوم</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="float-whats" target="_blank">
+            <i class="fa-brands fa-whatsapp first-float"></i>
+        </a>
+        <a href="#" class="float-phone" target="_blank">
+            <i class="fa-solid fa-phone second-float"></i>
+        </a>
+        <!-- end of footer -->
+
+        <!-- js for bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
+        <!-- js for bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>

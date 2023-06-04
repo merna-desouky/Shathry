@@ -47,9 +47,38 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-//count down function
+var swiper3 = new Swiper(".mySwiper3", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper4 = new Swiper(".mySwiper4", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper3,
+    },
+});
+var swiper5 = new Swiper(".mySwiper5", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper3,
+    },
+});
 
-const newDate = new Date("may 31 23 00:16:00").getTime();
+//count down function
+const newDate = new Date("June 31 23 00:16:00").getTime();
 
 const countdown = setInterval(() => {
     const date = new Date().getTime();
@@ -80,24 +109,23 @@ const countdown = setInterval(() => {
         document.querySelector(".expire-msg").style.display = "flex";
     }
 }, 1000);
+//count down function
 
 //search input
 window.onload = function loadSearchData() {
-    // Data to be used in the searchbar
     let products = [
         {
             title: "مكيف هاير 22000 وحدة سبليت حار بار-HSU-24HPB13/RT(T3)F",
-            image: "assets/product1.svg",
+            image: "../assets/product1.svg",
         },
         {
             title: "مكيف هاير 22000 وحدة سبليت حار بار-HSU-24HPB13/RT(T3)F",
-            image: "assets/product2.svg",
+            image: "../assets/product2.svg",
         },
     ];
 
     let list = document.getElementById("list");
 
-    // Add each data item as an <a> tag
     products.forEach((product) => {
         let a = document.createElement("a");
         a.classList.add("listItem");
@@ -137,3 +165,96 @@ function search() {
     }
     listContainer.style.display = noResults ? "none" : "flex";
 }
+//search input
+
+//counter
+let minusBtn = document.getElementById("minus-btn");
+let count = document.getElementById("count");
+let plusBtn = document.getElementById("plus-btn");
+
+let countNum = 0;
+// count.innerHTML = countNum;
+
+minusBtn.addEventListener("click", () => {
+    countNum <= 0 ? (countNum = 0) : (countNum -= 1);
+    count.innerHTML = countNum;
+});
+
+plusBtn.addEventListener("click", () => {
+    countNum += 1;
+    count.innerHTML = countNum;
+});
+
+//counter
+
+var starRating = document.querySelectorAll(".fa-star"),
+    ratingTotal = document.querySelectorAll(".rating-total");
+
+// convert ratingTotal HTMLCollection to array and reverse its order (5 star <-> 1 star)
+var reverseRatingTotal = Array.from(ratingTotal).reverse();
+
+// display initial rating totals
+displayTotals();
+
+// use event listener to record changes to user rating
+starRating.forEach(function (star) {
+    star.addEventListener("click", recordRating);
+});
+
+function recordRating(event) {
+    // use indexOf to identify selected user rating
+    var userRating = Array.from(starRating).indexOf(event.target);
+
+    // define selected rating to adjust display totals
+    var selectedIndex;
+
+    starRating.forEach(function (item, index) {
+        // add or remove .active class based upon selected user rating
+        if (index < userRating + 1) {
+            starRating[index].classList.add("active");
+            selectedIndex = index;
+        } else {
+            starRating[index].classList.remove("active");
+        }
+
+        displayTotals(selectedIndex);
+    });
+}
+
+// display star rating totals from html custom data-
+// function displayTotals(selectedIndex) {
+//     var barChart = document.querySelectorAll(".bar"),
+//         displaySummary = document.querySelectorAll(".summary"),
+//         numRatings = 0,
+//         numRatingsValue = 0;
+
+//     // convert barChart HTMLCollection to array and reverse its order (5 star <-> 1 star)
+//     var reverseBarChart = Array.from(barChart).reverse();
+
+//     reverseRatingTotal.forEach(function (total, index) {
+//         if (index == selectedIndex) {
+//             // add selected rating to display total
+//             total.innerHTML =
+//                 parseInt(total.getAttribute("data-rating-count")) + 1;
+//             // adjust selected bar width
+//             reverseBarChart[index].style.width =
+//                 ((parseInt(total.getAttribute("data-rating-count")) + 1) / 20) *
+//                     100 +
+//                 "%";
+//         } else {
+//             // display unselected totals
+//             total.innerHTML = total.getAttribute("data-rating-count");
+//             // adjust unselected bar widths
+//             reverseBarChart[index].style.width =
+//                 (total.getAttribute("data-rating-count") / 20) * 100 + "%";
+//         }
+//         // count total number and value of ratings
+//         numRatings += parseInt(total.innerHTML);
+//         numRatingsValue += parseInt(total.innerHTML) * (index + 1);
+//     });
+
+//     // display rating average and total
+//     ratingsAverage = (numRatingsValue / numRatings).toFixed(2);
+//     displaySummary[0].innerHTML =
+//         ratingsAverage + " average based on " + numRatings + " reviews.";
+// }
