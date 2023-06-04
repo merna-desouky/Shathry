@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="assets/store-logo.svg" />
+        <link rel="icon" href="../assets/store-logo.svg" />
 
         <title>Shathry</title>
         <!-- bootstrap style -->
@@ -33,7 +33,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
 
-        <link rel="stylesheet" href="./style.css?v=123" />
+        <link rel="stylesheet" href="../style.css?v=123" />
     </head>
     <body>
         <!-- start of top bar -->
@@ -50,7 +50,10 @@
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                 >
-                                    <img src="assets/egy-flag.svg" alt="flag" />
+                                    <img
+                                        src="../assets/egy-flag.svg"
+                                        alt="flag"
+                                    />
                                     Ar
                                 </button>
                                 <ul
@@ -94,8 +97,11 @@
                             <span onclick="openNav()" class="mob-menu"
                                 ><i class="fa-solid fa-bars"></i
                             ></span>
-                            <a class="logo" href="./index.html">
-                                <img src="assets/store-logo.svg" alt="logo" />
+                            <a class="logo" href="../index.html">
+                                <img
+                                    src="../assets/store-logo.svg"
+                                    alt="logo"
+                                />
                             </a>
                             <div class="search">
                                 <input
@@ -121,7 +127,7 @@
                                     <span>المفضلة</span>
                                 </a>
                                 <a href="#"
-                                    ><img src="assets/cart.svg" alt="cart" />
+                                    ><img src="../assets/cart.svg" alt="cart" />
                                     <span>السلة</span>
                                     <span class="counter">44</span>
                                 </a>
@@ -151,7 +157,7 @@
                             <div class="links">
                                 <ul class="list-unstyled ps-0">
                                     <li class="mb-1">
-                                        <a href="/index.html">
+                                        <a href="../index.html">
                                             <button
                                                 class="btn btn-toggle align-items-center rounded collapsed"
                                                 data-bs-toggle="collapse"
@@ -552,130 +558,17 @@
         </section>
         <!-- end of categories -->
 
-        <!-- start of intro -->
-        <section class="devolum-intro">
+        <!-- start row of categories -->
+        <section class="devolum-categories-view">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <div class="swiper mySwiper1">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img
-                                        src="assets/swiper-img1.png"
-                                        alt="product"
-                                        class="img-fluid"
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        src="assets/swiper-img1.png"
-                                        alt="product"
-                                        class="img-fluid"
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        src="assets/swiper-img1.png"
-                                        alt="product"
-                                        class="img-fluid"
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        src="assets/swiper-img1.png"
-                                        alt="product"
-                                        class="img-fluid"
-                                    />
-                                </div>
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="count-down">
-                            <h5>هذا النص هو مثال لنص يمكن ان يستبدل في نفس</h5>
-                            <span class="description mb-4"
-                                >هذا النص هو مثال لنص يمكن ان يستبدل في
-                                نفس</span
+                    <div class="col-12">
+                        <div class="headline">
+                            <h4>المفضلة</h4>
+                            <a href="all-products.html">
+                                <i class="fa-solid fa-chevron-left"></i> اعدادات
+                                الحساب</a
                             >
-
-                            <div class="counter mb-4">
-                                <div class="count-card">
-                                    <span class="number seconds"></span>
-                                    <span>Seconds</span>
-                                </div>
-                                <div class="count-card">
-                                    <span class="number minutes"></span>
-                                    <span>Minutes</span>
-                                </div>
-
-                                <div class="count-card">
-                                    <span class="number hours"></span>
-                                    <span>Hours</span>
-                                </div>
-                                <div class="count-card">
-                                    <span class="number days"></span>
-                                    <span>Days</span>
-                                </div>
-                                <div class="expire-msg">Expired</div>
-                            </div>
-
-                            <div class="swiper mySwiper2 mb-4">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/fridge.png"
-                                            alt="product"
-                                            class="img-fluid"
-                                        />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/fridge.png"
-                                            alt="product"
-                                            class="img-fluid"
-                                        />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/fridge.png"
-                                            alt="product"
-                                            class="img-fluid"
-                                        />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="assets/fridge.png"
-                                            alt="product"
-                                            class="img-fluid"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div class="swiper-pagination"></div>
-                            </div>
-
-                            <a href="#"> <button>شاهد المنتج</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of intro -->
-
-        <!-- start row of categories -->
-        <section class="devolum-categories-view">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="headline">
-                            <h4>مكيفات</h4>
-                            <a href="pages/all-products.html"
-                                >مشاهدة الكل<i
-                                    class="fa-solid fa-chevron-left"
-                                ></i
-                            ></a>
                         </div>
                         <div class="catg-content">
                             <div class="row justify-content-between gy-5">
@@ -684,7 +577,7 @@
                                         <div class="content">
                                             <div class="img-product">
                                                 <img
-                                                    src="assets/product-img.svg"
+                                                    src="../assets/product-img.svg"
                                                     alt="product"
                                                 />
                                                 <div class="discount">50%</div>
@@ -712,7 +605,7 @@
                                                     class="add-to-cart-btn mb-2"
                                                 >
                                                     <img
-                                                        src="assets/cart.svg"
+                                                        src="../assets/cart.svg"
                                                         alt="cart"
                                                     />
                                                     اضف الي العربة
@@ -734,7 +627,7 @@
                                         <div class="content">
                                             <div class="img-product">
                                                 <img
-                                                    src="assets/product-img.svg"
+                                                    src="../assets/product-img.svg"
                                                     alt="product"
                                                 />
                                             </div>
@@ -761,7 +654,7 @@
                                                     class="add-to-cart-btn mb-2"
                                                 >
                                                     <img
-                                                        src="assets/cart.svg"
+                                                        src="../assets/cart.svg"
                                                         alt="cart"
                                                     />
                                                     اضف الي العربة
@@ -783,130 +676,10 @@
                                         <div class="content">
                                             <div class="img-product">
                                                 <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                                <div class="discount">50%</div>
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="devolum-categories-view">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="headline">
-                            <h4>اجهزه منزلية</h4>
-                            <a href="pages/all-products.html"
-                                >مشاهدة الكل<i
-                                    class="fa-solid fa-chevron-left"
-                                ></i
-                            ></a>
-                        </div>
-                        <div class="catg-content">
-                            <div class="row justify-content-between gy-5">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
+                                                    src="../assets/product-img.svg"
                                                     alt="product"
                                                 />
                                                 <div class="discount">50%</div>
-                                                <div class="new">جديد</div>
                                             </div>
                                             <div class="description">
                                                 <span class="info"
@@ -931,7 +704,7 @@
                                                     class="add-to-cart-btn mb-2"
                                                 >
                                                     <img
-                                                        src="assets/cart.svg"
+                                                        src="../assets/cart.svg"
                                                         alt="cart"
                                                     />
                                                     اضف الي العربة
@@ -953,7 +726,7 @@
                                         <div class="content">
                                             <div class="img-product">
                                                 <img
-                                                    src="assets/product-img.svg"
+                                                    src="../assets/product-img.svg"
                                                     alt="product"
                                                 />
                                             </div>
@@ -980,7 +753,7 @@
                                                     class="add-to-cart-btn mb-2"
                                                 >
                                                     <img
-                                                        src="assets/cart.svg"
+                                                        src="../assets/cart.svg"
                                                         alt="cart"
                                                     />
                                                     اضف الي العربة
@@ -1002,7 +775,7 @@
                                         <div class="content">
                                             <div class="img-product">
                                                 <img
-                                                    src="assets/product-img.svg"
+                                                    src="../assets/product-img.svg"
                                                     alt="product"
                                                 />
                                             </div>
@@ -1029,7 +802,7 @@
                                                     class="add-to-cart-btn mb-2"
                                                 >
                                                     <img
-                                                        src="assets/cart.svg"
+                                                        src="../assets/cart.svg"
                                                         alt="cart"
                                                     />
                                                     اضف الي العربة
@@ -1051,10 +824,9 @@
                                         <div class="content">
                                             <div class="img-product">
                                                 <img
-                                                    src="assets/product-img.svg"
+                                                    src="../assets/product-img.svg"
                                                     alt="product"
                                                 />
-                                                <div class="new">جديد</div>
                                             </div>
                                             <div class="description">
                                                 <span class="info"
@@ -1079,7 +851,7 @@
                                                     class="add-to-cart-btn mb-2"
                                                 >
                                                     <img
-                                                        src="assets/cart.svg"
+                                                        src="../assets/cart.svg"
                                                         alt="cart"
                                                     />
                                                     اضف الي العربة
@@ -1094,6 +866,123 @@
                                                 </button></a
                                             >
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="catg-card">
+                                        <div class="content">
+                                            <div class="img-product">
+                                                <img
+                                                    src="../assets/product-img.svg"
+                                                    alt="product"
+                                                />
+                                            </div>
+                                            <div class="description">
+                                                <span class="info"
+                                                    >مكيف هاير 22000 وحدة سبليت
+                                                    حار
+                                                    بار-HSU-24HPB13/RT(T3)F</span
+                                                >
+                                                <span
+                                                    ><span class="price"
+                                                        >4099 ر.س</span
+                                                    >
+                                                    <span class="sale"
+                                                        ><s>2999 ر.س</s></span
+                                                    >
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="my-btns">
+                                            <a href="#">
+                                                <button
+                                                    class="add-to-cart-btn mb-2"
+                                                >
+                                                    <img
+                                                        src="../assets/cart.svg"
+                                                        alt="cart"
+                                                    />
+                                                    اضف الي العربة
+                                                </button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="add-to-fav-btn">
+                                                    <i
+                                                        class="fa-regular fa-heart"
+                                                    ></i>
+                                                    اضف الي المفضلة
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="catg-card">
+                                        <div class="content">
+                                            <div class="img-product">
+                                                <img
+                                                    src="../assets/product-img.svg"
+                                                    alt="product"
+                                                />
+                                            </div>
+                                            <div class="description">
+                                                <span class="info"
+                                                    >مكيف هاير 22000 وحدة سبليت
+                                                    حار
+                                                    بار-HSU-24HPB13/RT(T3)F</span
+                                                >
+                                                <span
+                                                    ><span class="price"
+                                                        >4099 ر.س</span
+                                                    >
+                                                    <span class="sale"
+                                                        ><s>2999 ر.س</s></span
+                                                    >
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="my-btns">
+                                            <a href="#">
+                                                <button
+                                                    class="add-to-cart-btn mb-2"
+                                                >
+                                                    <img
+                                                        src="../assets/cart.svg"
+                                                        alt="cart"
+                                                    />
+                                                    اضف الي العربة
+                                                </button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="add-to-fav-btn">
+                                                    <i
+                                                        class="fa-regular fa-heart"
+                                                    ></i>
+                                                    اضف الي المفضلة
+                                                </button></a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="load-more">
+                                        <label for="file"
+                                            >عرض 12 من إجمالي 40</label
+                                        >
+                                        <progress
+                                            id="file"
+                                            value="32"
+                                            max="100"
+                                        >
+                                            32%
+                                        </progress>
+                                        <a
+                                            class="load-btn"
+                                            href="all-products.html"
+                                            >تحميل المزيد من المنتجات</a
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -1103,606 +992,6 @@
             </div>
         </section>
         <!-- end row of categories -->
-
-        <!-- start of banner -->
-        <section class="devolum-banner">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="banner">
-                            <img
-                                src="assets/banner.png"
-                                class="img-fluid"
-                                alt="banner"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of banner -->
-
-        <!-- start row of categories -->
-        <section class="devolum-categories-view">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="headline">
-                            <h4>مكيفات</h4>
-                            <a href="pages/all-products.html"
-                                >مشاهدة الكل<i
-                                    class="fa-solid fa-chevron-left"
-                                ></i
-                            ></a>
-                        </div>
-                        <div class="catg-content">
-                            <div class="row justify-content-between gy-5">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                                <div class="discount">50%</div>
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                                <div class="discount">50%</div>
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="devolum-categories-view">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="headline">
-                            <h4>اجهزه منزلية</h4>
-                            <a href="pages/all-products.html"
-                                >مشاهدة الكل<i
-                                    class="fa-solid fa-chevron-left"
-                                ></i
-                            ></a>
-                        </div>
-                        <div class="catg-content">
-                            <div class="row justify-content-between gy-5">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                                <div class="discount">50%</div>
-                                                <div class="new">جديد</div>
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                                <div class="new">جديد</div>
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end row of categories -->
-
-        <!-- start of contact -->
-        <section class="devolum-contact">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="social-contact">
-                            <h4 class="mb-5">تواصل معنا</h4>
-                            <div class="contact-us">
-                                <div class="contact-card">
-                                    <i class="fa-solid fa-mobile-screen"></i>
-                                    <div>
-                                        <span>اتصل بنا</span
-                                        ><span>98410011443</span>
-                                    </div>
-                                </div>
-                                <div class="contact-card">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    <div>
-                                        <span>واتساب</span
-                                        ><span>98410011443</span>
-                                    </div>
-                                </div>
-                                <div class="contact-card">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <div>
-                                        <span>اتصل بنا</span
-                                        ><span>98410011443</span>
-                                    </div>
-                                </div>
-                                <div class="contact-card">
-                                    <i class="fa-solid fa-inbox"></i>
-                                    <div>
-                                        <span>اتصل بنا</span
-                                        ><span>98410011443</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="send-msg">
-                                <h4 class="mb-5">ارسل رسالة مباشرة</h4>
-                                <div class="row gy-5">
-                                    <div class="col-lg-6 col-sm-12">
-                                        <div class="inputs">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-sm-12">
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="الاسم الأول"
-                                                    />
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="رقم الهاتف"
-                                                    />
-                                                    <div class="dropdown">
-                                                        <button
-                                                            class="btn btn-secondary dropdown-toggle"
-                                                            type="button"
-                                                            id="dropdownMenuButton1"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false"
-                                                        >
-                                                            الموضوع
-                                                        </button>
-                                                        <ul
-                                                            class="dropdown-menu"
-                                                            aria-labelledby="dropdownMenuButton1"
-                                                        >
-                                                            <li>
-                                                                <a
-                                                                    class="dropdown-item"
-                                                                    href="#"
-                                                                    >Action</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    class="dropdown-item"
-                                                                    href="#"
-                                                                    >Another
-                                                                    action</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    class="dropdown-item"
-                                                                    href="#"
-                                                                    >Something
-                                                                    else here</a
-                                                                >
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-sm-12">
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="الاسم الأخير"
-                                                    />
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="البريد الإلكتروني"
-                                                    />
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="إضافة تعليق"
-                                                    />
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <button class="save">
-                                                        حفظ
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-12">
-                                        <div class="google-map">
-                                            <iframe
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
-                                                width="600"
-                                                height="450"
-                                                style="border: 0"
-                                                allowfullscreen=""
-                                                loading="lazy"
-                                                referrerpolicy="no-referrer-when-downgrade"
-                                            ></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <img
-                                src="assets/bg-img.png"
-                                class="bg-img"
-                                alt="bg-img"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of contact -->
 
         <!-- start of footer -->
         <div class="devolum-footer">
@@ -1711,7 +1000,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="content">
                             <a href="#" class="mb-4"
-                                ><img src="assets/store-logo.svg" alt="logo"
+                                ><img src="../assets/store-logo.svg" alt="logo"
                             /></a>
                             <p class="mb-5">
                                 هذا النص هو مثال لنص يمكن أن يستبدل في نفس
@@ -1765,13 +1054,13 @@
                             </div>
                             <div class="payment-methods">
                                 <img
-                                    src="assets/visa-logo.svg"
+                                    src="../assets/visa-logo.svg"
                                     alt="visa"
                                 /><img
-                                    src="assets/mada-logo.svg"
+                                    src="../assets/mada-logo.svg"
                                     alt="mada"
                                 /><img
-                                    src="assets/mastercard-logo.svg"
+                                    src="../assets/mastercard-logo.svg"
                                     alt="mastercard"
                                 />
                             </div>
@@ -1807,6 +1096,6 @@
         ></script>
         <!-- js for bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
     </body>
 </html>

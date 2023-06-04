@@ -17,6 +17,7 @@
   --product-color: #b6b6b6;
   --table-color: #f3f9fb;
   --rate-color: #ffd600;
+  --alert-color: #fff8d1;
 }
 
 body {
@@ -130,8 +131,9 @@ a {
 
 .devolum-bottom-header {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  padding: 25px 0;
+  padding: 20px 0;
   margin-bottom: 20px;
+  background-color: var(--basic-color);
 }
 .devolum-bottom-header .bottom-header {
   display: flex;
@@ -722,6 +724,40 @@ a {
 .devolum-categories-view .catg-content .catg-card:hover .my-btns {
   opacity: 1;
 }
+.devolum-categories-view .catg-content .load-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.devolum-categories-view .catg-content .load-more label {
+  color: var(--third-color);
+}
+.devolum-categories-view .catg-content .load-more progress {
+  border-radius: 3px;
+  height: 5px;
+  margin: 20px 0;
+}
+.devolum-categories-view .catg-content .load-more progress::-webkit-progress-bar {
+  background-color: var(--sale-color);
+  border-radius: 3px;
+}
+.devolum-categories-view .catg-content .load-more progress::-webkit-progress-value {
+  border-radius: 3px;
+  background-color: var(--primary-color);
+}
+.devolum-categories-view .catg-content .load-more .load-btn {
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  width: 250px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devolum-categories-view .catg-content .load-more .load-btn:hover {
+  background-color: var(--hover-color);
+}
 .devolum-categories-view .filter {
   display: flex;
   flex-direction: column;
@@ -1155,6 +1191,11 @@ a {
   padding: 5px 10px;
   width: 20%;
 }
+@media (max-width: 660px) {
+  .devolum-single-product .content-of-single-product .size select {
+    width: 45%;
+  }
+}
 .devolum-single-product .content-of-single-product .service-type .my-checkbox label:first-of-type {
   -webkit-margin-end: 100px;
           margin-inline-end: 100px;
@@ -1257,7 +1298,11 @@ a {
   align-items: center;
   justify-content: center;
 }
-.info-and-reviews .mytabs .nav-item .nav-link {
+.info-and-reviews .mytabs .nav {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.info-and-reviews .mytabs .nav .nav-item .nav-link {
   background-color: var(--basic-color);
   border: 1px solid var(--sale-color);
   color: var(--text-color);
@@ -1266,11 +1311,11 @@ a {
   width: 200px;
   height: 45px;
 }
-.info-and-reviews .mytabs .nav-item .nav-link:hover, .info-and-reviews .mytabs .nav-item .nav-link.active {
+.info-and-reviews .mytabs .nav .nav-item .nav-link:hover, .info-and-reviews .mytabs .nav .nav-item .nav-link.active {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
-.info-and-reviews .mytabs .nav-item:not(:last-child) {
+.info-and-reviews .mytabs .nav .nav-item:not(:last-child) {
   -webkit-margin-end: 20px;
           margin-inline-end: 20px;
 }
@@ -1279,11 +1324,6 @@ a {
 }
 .info-and-reviews .tab-content .tab-pane .content {
   width: 100%;
-  /* Three column layout */
-  /* Place text to the right */
-  /* The bar container */
-  /* Individual bars */
-  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 }
 .info-and-reviews .tab-content .tab-pane .content .myvideo {
   width: 100%;
@@ -1372,7 +1412,7 @@ a {
   font-size: 15px;
 }
 .info-and-reviews .tab-content .tab-pane .content .all-comments .comments .fa-star {
-  font-size: 20px;
+  font-size: 15px;
 }
 .info-and-reviews .tab-content .tab-pane .content .all-comments .comments .fa-star.checked {
   color: var(--rate-color);
@@ -1391,6 +1431,10 @@ a {
 .info-and-reviews .tab-content .tab-pane .content .all-comments .add-comment:hover {
   background-color: var(--hover-color);
 }
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar {
+  /* Individual bars */
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+}
 .info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar {
   display: flex;
   align-items: center;
@@ -1405,6 +1449,49 @@ a {
 }
 .info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar .middle {
   width: 66%;
+}
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: var(--rate-color);
+}
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: var(--rate-color);
+}
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: var(--rate-color);
+}
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: var(--rate-color);
+}
+.info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: var(--rate-color);
+}
+@media (max-width: 400px) {
+  .info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar {
+    /* Hide the right column on small screens */
+  }
+  .info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .side,
+  .info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .middle {
+    width: 100%;
+  }
+  .info-and-reviews .tab-content .tab-pane .content .all-comments .rating-bar .right {
+    display: none;
+  }
 }
 .info-and-reviews .tab-content .tab-pane .content .all-comments .modal-dialog .modal-content {
   border-radius: 5px;
@@ -1467,46 +1554,132 @@ a {
     padding: 30px;
   }
 }
-.info-and-reviews .tab-content .tab-pane .content .bar-container {
+@media (max-width: 600px) {
+  .info-and-reviews .tab-content .tab-pane .content .all-comments {
+    padding: 15px;
+  }
+  .info-and-reviews .tab-content .tab-pane .content .all-comments .comments {
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
+  }
+}
+
+.devolum-sign-up .sign-up {
+  background-color: var(--basic-color);
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 30px 50px;
+  margin: 30px 150px;
+  border-radius: 3px;
+}
+.devolum-sign-up .sign-up h4 {
+  text-decoration: underline;
+  text-underline-offset: 13px;
+  text-decoration-color: var(--secondary-color);
+}
+.devolum-sign-up .sign-up span {
+  font-size: 15px;
+  color: var(--sale-color);
+}
+.devolum-sign-up .sign-up .send-code-alert {
+  background-color: var(--alert-color);
+  padding: 10px;
+  border-radius: 3px;
+}
+.devolum-sign-up .sign-up .myinput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.devolum-sign-up .sign-up .myinput label {
+  color: var(--third-color);
+  margin-bottom: 7px;
+}
+.devolum-sign-up .sign-up .myinput input {
+  border: 1px solid var(--sale-color);
+  border-radius: 3px;
+  padding: 8px;
+  text-align: right;
   width: 100%;
-  background-color: #f1f1f1;
-  text-align: center;
-  color: white;
 }
-.info-and-reviews .tab-content .tab-pane .content .bar-5 {
-  width: 60%;
-  height: 18px;
-  background-color: var(--rate-color);
+.devolum-sign-up .sign-up .myinput input::-moz-placeholder {
+  color: var(--sale-color);
 }
-.info-and-reviews .tab-content .tab-pane .content .bar-4 {
-  width: 30%;
-  height: 18px;
-  background-color: var(--rate-color);
+.devolum-sign-up .sign-up .myinput input::placeholder {
+  color: var(--sale-color);
 }
-.info-and-reviews .tab-content .tab-pane .content .bar-3 {
-  width: 10%;
-  height: 18px;
-  background-color: var(--rate-color);
+.devolum-sign-up .sign-up .myinput input:focus-visible {
+  outline: var(--sale-color) auto 1px;
 }
-.info-and-reviews .tab-content .tab-pane .content .bar-2 {
-  width: 4%;
-  height: 18px;
-  background-color: var(--rate-color);
+.devolum-sign-up .sign-up .myinput .pass {
+  position: relative;
 }
-.info-and-reviews .tab-content .tab-pane .content .bar-1 {
-  width: 15%;
-  height: 18px;
-  background-color: var(--rate-color);
+.devolum-sign-up .sign-up .myinput .pass .eye-pass {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  color: var(--sale-color);
 }
-@media (max-width: 400px) {
-  .info-and-reviews .tab-content .tab-pane .content {
-    /* Hide the right column on small screens */
-  }
-  .info-and-reviews .tab-content .tab-pane .content .side,
-  .info-and-reviews .tab-content .tab-pane .content .middle {
-    width: 100%;
-  }
-  .info-and-reviews .tab-content .tab-pane .content .right {
-    display: none;
+.devolum-sign-up .sign-up .all-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.devolum-sign-up .sign-up .all-btns .sign-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  width: 260px;
+  height: 48px;
+}
+.devolum-sign-up .sign-up .all-btns .sign-up-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--basic-color);
+}
+.devolum-sign-up .sign-up .all-btns .google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  width: 260px;
+  height: 48px;
+}
+.devolum-sign-up .sign-up .all-btns .google-btn i {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.devolum-sign-up .sign-up .all-btns .google-btn:hover {
+  color: var(--basic-color);
+  background-color: var(--second-hover-color);
+}
+.devolum-sign-up .sign-up .all-btns span {
+  color: var(--sale-color);
+}
+.devolum-sign-up .sign-up .all-btns a {
+  color: var(--primary-color);
+}
+.devolum-sign-up .sign-up .all-btns a:hover {
+  color: var(--second-hover-color);
+}
+.devolum-sign-up .sign-up .all-btns .all-rights {
+  font-size: 14px;
+}
+.devolum-sign-up .sign-up .all-btns .all-rights a {
+  color: var(--secondary-color);
+}
+.devolum-sign-up .sign-up .all-btns .all-rights a:hover {
+  color: var(--hover-color);
+}
+@media (max-width: 750px) {
+  .devolum-sign-up .sign-up {
+    margin: 5px;
+    padding: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
