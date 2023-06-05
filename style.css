@@ -369,6 +369,131 @@ a {
   }
 }
 
+.offcanvas .offcanvas-header h4 {
+  text-decoration: underline;
+  text-underline-offset: 13px;
+  text-decoration-color: var(--secondary-color);
+}
+.offcanvas .offcanvas-body {
+  position: relative;
+}
+.offcanvas .offcanvas-body .cart-offcanvas {
+  height: calc(100vh - 200px);
+  overflow-x: scroll;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .img-product {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .img-product img {
+  width: 90px;
+  height: 100px;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .name .title {
+  font-size: 14px;
+  -webkit-padding-end: 30px;
+          padding-inline-end: 30px;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .name i {
+  color: rgba(217, 40, 47, 0.4705882353);
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .price-and-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .price-and-quantity .price {
+  color: var(--secondary-color);
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .price-and-quantity .quantity {
+  display: flex;
+  align-items: center;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .price-and-quantity .quantity div {
+  margin: 0 10px;
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .price-and-quantity .quantity #count {
+  color: var(--third-color);
+}
+.offcanvas .offcanvas-body .cart-offcanvas .mycard .description .price-and-quantity .quantity button {
+  border: 1px solid var(--sale-color);
+  border-radius: 3px;
+  background-color: var(--basic-color);
+  color: var(--sale-color);
+  padding: 1px 9px;
+  font-size: 15px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--basic-color);
+}
+.offcanvas .offcanvas-body .offcanvas-footer .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer .total span:first-child {
+  font-weight: 600;
+  font-size: 15px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer .total span:last-child {
+  color: var(--third-color);
+  font-size: 15px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer .mybtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer .mybtns .cart-btn {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 45px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer .mybtns .cart-btn:hover {
+  background-color: var(--hover-color);
+}
+.offcanvas .offcanvas-body .offcanvas-footer .mybtns .continue-btn {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 45px;
+}
+.offcanvas .offcanvas-body .offcanvas-footer .mybtns .continue-btn:hover {
+  background-color: var(--second-hover-color);
+}
+
 .devolum-categories {
   margin-bottom: 60px;
 }
@@ -1039,6 +1164,9 @@ a {
   color: var(--secondary-color);
 }
 
+.devolum-breadcrumb {
+  margin-bottom: 20px;
+}
 .devolum-breadcrumb .mybreadcrumb {
   margin-top: 20px;
 }
@@ -1682,4 +1810,27 @@ a {
     margin: 5px;
     padding: 15px;
   }
+}
+
+.devolum-empty-fav .empty-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.devolum-empty-fav .empty-content span {
+  color: var(--third-color);
+  margin-bottom: 15px;
+}
+.devolum-empty-fav .empty-content a {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+}
+.devolum-empty-fav .empty-content a:hover {
+  background-color: var(--hover-color);
 }/*# sourceMappingURL=style.css.map */

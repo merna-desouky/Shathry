@@ -389,6 +389,141 @@ a {
 }
 //end of bottom header
 
+//start of offcanvas
+.offcanvas {
+    .offcanvas-header {
+        h4 {
+            text-decoration: underline;
+            text-underline-offset: 13px;
+            text-decoration-color: var(--secondary-color);
+        }
+    }
+    .offcanvas-body {
+        position: relative;
+        .cart-offcanvas {
+            height: calc(100vh - 200px);
+            overflow-x: scroll;
+            .mycard {
+                display: flex;
+                align-items: center;
+                background-color: var(--bg-color);
+                border-radius: 3px;
+                padding: 10px;
+                margin-bottom: 20px;
+                .img-product {
+                    margin-inline-end: 15px;
+                    img {
+                        width: 90px;
+
+                        height: 100px;
+                    }
+                }
+                .description {
+                    .name {
+                        display: flex;
+                        justify-content: space-between;
+
+                        margin-bottom: 20px;
+                        .title {
+                            font-size: 14px;
+                            padding-inline-end: 30px;
+                        }
+                        i {
+                            color: #d9282f78;
+                        }
+                    }
+                    .price-and-quantity {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .price {
+                            color: var(--secondary-color);
+                        }
+                        .quantity {
+                            display: flex;
+                            align-items: center;
+
+                            div {
+                                margin: 0 10px;
+                            }
+
+                            #count {
+                                color: var(--third-color);
+                            }
+                            button {
+                                border: 1px solid var(--sale-color);
+                                border-radius: 3px;
+                                background-color: var(--basic-color);
+                                color: var(--sale-color);
+                                padding: 1px 9px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .offcanvas-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--basic-color);
+            .total {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid var(--border-color);
+                border-bottom: 1px solid var(--border-color);
+                padding: 15px 20px;
+                margin-bottom: 15px;
+                span:first-child {
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+                span:last-child {
+                    color: var(--third-color);
+                    font-size: 15px;
+                }
+            }
+            .mybtns {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+                margin-bottom: 10px;
+                .cart-btn {
+                    background-color: var(--secondary-color);
+                    border-radius: 3px;
+                    color: var(--basic-color);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: 45px;
+                    &:hover {
+                        background-color: var(--hover-color);
+                    }
+                }
+                .continue-btn {
+                    background-color: var(--primary-color);
+                    border-radius: 3px;
+                    color: var(--basic-color);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: 45px;
+                    &:hover {
+                        background-color: var(--second-hover-color);
+                    }
+                }
+            }
+        }
+    }
+}
+//end of offcanvas
+
 //start of categories
 .devolum-categories {
     margin-bottom: 60px;
@@ -1086,6 +1221,7 @@ a {
 
 //Start of home all products style
 .devolum-breadcrumb {
+    margin-bottom: 20px;
     .mybreadcrumb {
         margin-top: 20px;
         ol {
@@ -1811,3 +1947,31 @@ a {
     }
 }
 //end of sign up
+
+//start of empty fav
+.devolum-empty-fav {
+    .empty-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            color: var(--third-color);
+            margin-bottom: 15px;
+        }
+        a {
+            background-color: var(--secondary-color);
+            border-radius: 3px;
+            color: var(--basic-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 45px;
+            &:hover {
+                background-color: var(--hover-color);
+            }
+        }
+    }
+}
+//end of empty fav

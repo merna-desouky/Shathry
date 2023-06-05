@@ -33,7 +33,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
 
-        <link rel="stylesheet" href="./style.css?v=123" />
+        <link rel="stylesheet" href="./style.css?v=456" />
     </head>
     <body>
         <!-- start of top bar -->
@@ -120,12 +120,73 @@
                                     ><i class="fa-regular fa-heart"></i>
                                     <span>المفضلة</span>
                                 </a>
-                                <a href="#"
-                                    ><img src="assets/cart.svg" alt="cart" />
+                                <a
+                                    data-bs-toggle="offcanvas"
+                                    href="#offcanvasExample"
+                                    role="button"
+                                    aria-controls="offcanvasExample"
+                                    ><img src="../assets/cart.svg" alt="cart" />
                                     <span>السلة</span>
                                     <span class="counter">44</span>
                                 </a>
                             </div>
+                            <!-- offcanvas -->
+                            <div
+                                class="offcanvas offcanvas-start"
+                                tabindex="-1"
+                                id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel"
+                            >
+                                <div class="offcanvas-header">
+                                    <h4>السلة</h4>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="offcanvas"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="top-header mb-4"></div>
+                                    <div class="cart-offcanvas">
+                                        <div class="mycard">
+                                            <a href="pages/single-product.html">
+                                                <img
+                                                    src="assets/cart-product.png"
+                                            /></a>
+                                            <div class="description">
+                                                <div class="name">
+                                                    <span class="title"
+                                                        >مكيف هاير 22000 وحدة
+                                                        سبليت حار
+                                                        بار-HSU-24HPB13/RT(T3)F</span
+                                                    >
+                                                    <span
+                                                        ><i
+                                                            class="fa-solid fa-trash-can"
+                                                        ></i
+                                                    ></span>
+                                                </div>
+                                                <div class="price-and-counter">
+                                                    <span>2999 ر.س</span>
+                                                    <div class="quantity">
+                                                        <button id="minus-btn">
+                                                            -
+                                                        </button>
+
+                                                        <div id="count">0</div>
+
+                                                        <button id="plus-btn">
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- offcanvas -->
                             <a class="mob-search" href="#">
                                 <i class="fa-solid fa-magnifying-glass"></i
                             ></a>
@@ -1807,6 +1868,8 @@
         ></script>
         <!-- js for bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
         <script src="script.js"></script>
     </body>
 </html>
