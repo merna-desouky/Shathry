@@ -173,7 +173,7 @@
                                                         ></i
                                                     ></span>
                                                 </div>
-                                                <div class="price-and-counter">
+                                                <div class="price-and-quantity">
                                                     <span>2999 ر.س</span>
                                                     <div class="quantity">
                                                         <button id="minus-btn">
@@ -193,9 +193,53 @@
                                 </div>
                             </div>
                             <!-- offcanvas -->
-                            <a class="mob-search" href="#">
+                            <a
+                                class="search-icon"
+                                href="#"
+                                onclick="openMobileSearch()"
+                            >
                                 <i class="fa-solid fa-magnifying-glass"></i
                             ></a>
+                            <div id="mysearch">
+                                <div class="mybar">
+                                    <a
+                                        href="javascript:void(0)"
+                                        class="close-btn"
+                                        onclick="closeMobileSearch()"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></a>
+                                    <div class="mobile-search">
+                                        <input
+                                            id="search-bar"
+                                            autocomplete="off"
+                                            onkeyup="search()"
+                                            type="text"
+                                            name="search"
+                                            placeholder="ابحث"
+                                        />
+                                    </div>
+                                    <a
+                                        class="search-icon"
+                                        href="#"
+                                        onclick="openMobileSearch()"
+                                    >
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"
+                                        ></i
+                                    ></a>
+                                </div>
+                                <div id="mobile-list">
+                                    <div class="list-item">
+                                        <img
+                                            src="../assets/product1.svg"
+                                            class="search-img"
+                                        /><span
+                                            >مكيف هاير 22000 وحدة سبليت حار
+                                            بار-HSU-24HPB13/RT(T3)F</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div
                             id="mySidenav"

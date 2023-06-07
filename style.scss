@@ -19,6 +19,8 @@
     --table-color: #f3f9fb;
     --rate-color: #ffd600;
     --alert-color: #fff8d1;
+    --badge-bg: #ecfce8;
+    --badge-text: #109e49;
 }
 body {
     font-family: "Readex Pro", sans-serif;
@@ -83,7 +85,16 @@ a {
 .second-float {
     margin-top: 13px;
 }
-
+.my-badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border-radius: 3px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 //Start of home page style
 
 //Start of Header
@@ -137,7 +148,7 @@ a {
         align-items: center;
 
         .mob-menu,
-        .mob-search {
+        .search-icon {
             font-size: 23px;
             display: none;
             background-color: var(--bg-color);
@@ -248,6 +259,78 @@ a {
             }
         }
     }
+    //start of mobile search
+    #mysearch {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        background-color: var(--basic-color);
+        flex-direction: column;
+
+        .mybar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            height: 60px;
+            width: 100%;
+            .close-btn {
+                font-size: 23px;
+                background-color: var(--bg-color);
+                border-radius: 3px;
+                color: var(--primary-color);
+                padding: 4px 15px;
+            }
+            .mobile-search {
+                width: 65%;
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid var(--border-color);
+                    padding: 0 10px;
+                    border-radius: 3px;
+                    background-color: var(--basic-color);
+
+                    &:focus-visible {
+                        outline: #dae6ea auto 1px;
+                    }
+                }
+            }
+        }
+        #mobile-list {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 100%;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            .list-item {
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                .search-img {
+                    margin-inline-end: 20px;
+                }
+                span {
+                    color: var(--third-color);
+                }
+                &:hover {
+                    background-color: var(--second-bg-color);
+                    span {
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+    //end of mobile search
+
     //start of sidenav
     .sidenav {
         height: 100%;
@@ -372,7 +455,7 @@ a {
                 display: none;
             }
             .mob-menu,
-            .mob-search {
+            .search-icon {
                 display: flex;
             }
         }
@@ -402,7 +485,8 @@ a {
         position: relative;
         .cart-offcanvas {
             height: calc(100vh - 200px);
-            overflow-x: scroll;
+            overflow-x: hidden;
+            overflow-y: scroll;
             .mycard {
                 display: flex;
                 align-items: center;
@@ -565,10 +649,10 @@ a {
             .drop-menu {
                 display: none;
                 position: absolute;
-                margin-top: 11px;
+                margin-top: 10px;
                 // width: 380px;
                 min-width: 350px;
-                padding: 20px 0px;
+
                 border-radius: 3px;
                 flex-direction: column;
                 background-color: var(--basic-color);
@@ -631,10 +715,7 @@ a {
         display: none;
     }
 }
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; /* remove the gap so it doesn't close */
-}
+
 //end of categories
 
 //start of intro
@@ -728,6 +809,7 @@ a {
         .mySwiper2 {
             width: 100%;
             .swiper-slide {
+                width: 100%;
                 img {
                     width: 100%;
                 }
@@ -1954,7 +2036,10 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        img {
+            width: 100%;
+            height: 300px;
+        }
         span {
             color: var(--third-color);
             margin-bottom: 15px;
@@ -1975,3 +2060,524 @@ a {
     }
 }
 //end of empty fav
+
+//start of cart page
+.devolum-cart {
+    h4 {
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        text-decoration-color: var(--secondary-color);
+    }
+    .mycart {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+        border-radius: 3px;
+        padding: 10px 20px;
+
+        .card-cart {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            .product-img {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-inline-end: 10px;
+                    width: 85px;
+                    height: 85px;
+                }
+            }
+
+            .info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .title {
+                    width: 300px;
+                    color: var(--text-color);
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                .quantity {
+                    display: flex;
+                    align-items: center;
+
+                    div {
+                        margin: 0 10px;
+                    }
+
+                    #count {
+                        color: var(--third-color);
+                    }
+                    button {
+                        border: 1px solid var(--sale-color);
+                        border-radius: 3px;
+                        background-color: var(--basic-color);
+                        color: var(--sale-color);
+                        padding: 1px 9px;
+                        font-size: 15px;
+                    }
+                }
+                .delete {
+                    color: var(--sale-color);
+                    background-color: transparent;
+                    border: none;
+                }
+                .modal-dialog {
+                    .modal-content {
+                        border-radius: 3px;
+                        .modal-body {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            span {
+                                color: var(--third-color);
+                            }
+                            .btns {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                width: 100%;
+                                .add-to-fav-btn {
+                                    background-color: var(--primary-color);
+                                    color: var(--basic-color);
+                                    border-radius: 3px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 170px;
+                                    height: 45px;
+                                    &:hover {
+                                        background-color: var(
+                                            --second-hover-color
+                                        );
+                                    }
+                                }
+                                .delete-btn {
+                                    background-color: var(--secondary-color);
+                                    color: var(--basic-color);
+                                    border-radius: 3px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 170px;
+                                    height: 45px;
+                                    &:hover {
+                                        background-color: var(--hover-color);
+                                    }
+                                }
+                                @media (max-width: 400px) {
+                                    .add-to-fav-btn,
+                                    .delete-btn {
+                                        width: 145px;
+                                    }
+                                }
+                                @media (max-width: 350px) {
+                                    .add-to-fav-btn,
+                                    .delete-btn {
+                                        width: 133px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                @media (max-width: 670px) {
+                    flex-wrap: wrap;
+
+                    .title {
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+                    .quantity {
+                        div {
+                            margin: 0 5px;
+                        }
+                        button {
+                            padding: 0px 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .order-details {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+        padding: 10px 20px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            span:first-child {
+                color: var(--sale-color);
+                font-size: 14px;
+            }
+            span:last-child {
+                color: var(--third-color);
+                font-size: 14px;
+            }
+        }
+        .total {
+            border-top: 1px solid var(--sale-color);
+            border-bottom: 1px solid var(--sale-color);
+            padding: 15px 0;
+            span:first-child {
+                font-weight: 700;
+                color: var(--text-color);
+            }
+        }
+        .continue-btn {
+            background-color: var(--secondary-color);
+            border-radius: 3px;
+            color: var(--basic-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 45px;
+            &:hover {
+                background-color: var(--hover-color);
+            }
+        }
+    }
+    .continue {
+        color: var(--secondary-color);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+}
+//end of cart page
+
+//start of who page
+.devolum-who {
+    .poster {
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .blog {
+        p {
+            color: var(--third-color);
+            line-height: 32px;
+        }
+    }
+}
+//end of who page
+
+//start of profile page
+.devolum-profile-tabs {
+    margin-bottom: 30px;
+    .myprofile-tabs {
+        box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: flex;
+        .name {
+            display: flex;
+            flex-direction: column;
+            .customer-name {
+                font-weight: 600;
+            }
+            .customer-email {
+                color: var(--sale-color);
+            }
+        }
+        .vertical {
+            display: flex;
+            margin: 0 50px;
+            div {
+                width: 2px;
+                height: 100%;
+                border-radius: 3px;
+                background-color: var(--grey-color);
+                margin-inline-end: 2px;
+                &:last-child {
+                    margin-inline-end: 2px;
+                }
+            }
+        }
+        .nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-item {
+                .nav-link {
+                    color: var(--third-color);
+                    background-color: var(--bg-color);
+                    border-radius: 3px;
+                    width: 165px;
+                    height: 45px;
+                    &:hover,
+                    &.active {
+                        background-color: var(--second-bg-color);
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+        @media (max-width: 1055px) {
+            .nav {
+                .nav-item {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        @media (max-width: 700px) {
+            flex-direction: column;
+            .name {
+                margin-bottom: 20px;
+            }
+            .vertical {
+                display: none;
+            }
+            .nav {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                .nav-item:not(:last-child) {
+                    margin-inline-end: 15px;
+                }
+            }
+        }
+    }
+}
+
+.devolum-profile-content {
+    .tab-content {
+        .tab-pane {
+            .myaccount {
+                box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+                padding: 20px 60px;
+                .myinput {
+                    margin-bottom: 30px;
+                    label {
+                        margin-bottom: 10px;
+                        color: var(--third-color);
+                    }
+                    div {
+                        position: relative;
+                        input {
+                            width: 100%;
+                            border-radius: 3px;
+                            border: 0;
+                            background-color: var(--bg-color);
+                            padding: 10px;
+                            &:focus-visible {
+                                outline: none;
+                            }
+                        }
+                        .edit-icon {
+                            position: absolute;
+                            top: 9px;
+                            left: 16px;
+                            i {
+                                color: var(--sale-color);
+                            }
+                        }
+                    }
+                }
+                .save-btn {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        background-color: var(--secondary-color);
+                        border-radius: 3px;
+                        color: var(--basic-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        height: 45px;
+                    }
+                }
+                @media (max-width: 600px) {
+                    padding: 20px 30px;
+                }
+            }
+            .all-orders {
+                box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+                padding: 30px;
+                .order {
+                    display: grid;
+                    grid-template-columns: 2fr repeat(6, 1fr);
+                    gap: 45px;
+                    padding: 15px 0;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid var(--border-color);
+                    }
+                    .single-cell {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 15px;
+                        div {
+                            font-weight: 500;
+                        }
+                        span {
+                            color: var(--sale-color);
+                        }
+                        :first-child {
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .delete {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            color: var(--sale-color);
+                        }
+                    }
+                    @media (max-width: 800px) {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 35px;
+                    }
+                    @media (max-width: 360px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+//end of profile page
+
+//start of order details
+.devolum-title {
+    margin-bottom: 30px;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+            text-decoration: underline;
+            text-underline-offset: 13px;
+            text-decoration-color: var(--secondary-color);
+        }
+        .refund-btn {
+            background-color: var(--secondary-color);
+            border-radius: 3px;
+            color: var(--basic-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 45px;
+            border: none;
+            &:hover {
+                background-color: var(--hover-color);
+            }
+        }
+    }
+}
+.devolum-order-details {
+    .order-details {
+        box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+        border-radius: 3px;
+        padding: 30px;
+        width: 100%;
+        .single-cell {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            // overflow: hidden;
+            // word-wrap: break-word;
+
+            span {
+                color: var(--sale-color);
+                margin-bottom: 20px;
+            }
+            div {
+                color: var(--text-color);
+            }
+        }
+        @media (max-width: 420px) {
+            padding: 0;
+        }
+    }
+}
+.devolum-order-product {
+    margin-bottom: 30px;
+    h4 {
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        text-decoration-color: var(--secondary-color);
+        margin-bottom: 30px;
+    }
+    .order-product {
+        box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+        border-radius: 3px;
+        padding: 30px;
+        width: 100%;
+        .order-product-labels {
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+        hr {
+            border: 1px solid var(--product-color);
+        }
+        .single-cell {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: var(--sale-color);
+                margin-bottom: 20px;
+            }
+            div {
+                color: var(--text-color);
+            }
+            .order-name {
+                display: flex;
+                align-items: center;
+                span {
+                    color: var(--text-color);
+
+                    margin-bottom: 0;
+                }
+            }
+        }
+        @media (max-width: 760px) {
+            flex-direction: column;
+            .single-cell {
+                span {
+                    margin-bottom: 0;
+                }
+                div {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.devolum-invoice-address {
+    .invoice-address {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+        border-radius: 3px;
+        padding: 30px;
+        h4 {
+            text-decoration: underline;
+            text-underline-offset: 13px;
+            text-decoration-color: var(--secondary-color);
+            margin-bottom: 30px;
+        }
+        span {
+            color: var(--third-color);
+            margin-bottom: 15px;
+        }
+    }
+}
+//end of order details

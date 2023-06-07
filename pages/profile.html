@@ -370,7 +370,6 @@
                                 </div>
                             </div>
                             <!-- offcanvas -->
-
                             <a
                                 class="search-icon"
                                 href="#"
@@ -856,7 +855,7 @@
                                     class="breadcrumb-item active"
                                     aria-current="page"
                                 >
-                                    المفضلة
+                                    حسابي
                                 </li>
                             </ol>
                         </div>
@@ -866,239 +865,307 @@
         </div>
         <!-- end of bread crumb -->
 
-        <section class="devolum-empty-fav">
+        <section class="devolum-profile-tabs">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="empty-content">
-                            <img src="../assets/Empty-cart.svg" />
-                            <span> لا يوجد عناصر مفضلة.</span>
-                            <a class="shop-btn" href="all-products.html"
-                                >تسوق الآن</a
+                        <div class="myprofile-tabs">
+                            <div class="name">
+                                <span class="customer-name">أهلاً sara</span
+                                ><span class="customer-email"
+                                    >saraaa.alii77@gmail.com</span
+                                >
+                            </div>
+                            <div class="vertical">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <ul
+                                class="nav nav-pills mb-3"
+                                id="pills-tab"
+                                role="tablist"
                             >
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="pills-account-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-account"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-account"
+                                        aria-selected="true"
+                                    >
+                                        <i class="fa-regular fa-user"></i> حسابي
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-orders-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-orders"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-orders"
+                                        aria-selected="false"
+                                    >
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                        الطلبات
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-fav-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-fav"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-fav"
+                                        aria-selected="false"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                        المفضلة
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-address-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-address"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-address"
+                                        aria-selected="false"
+                                    >
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        عناويني
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- start row of categories -->
-        <section class="devolum-categories-view">
+        <section class="devolum-profile-content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="headline">
-                            <h4>المنتجات التي تمت مشاهدتها مؤخراََ</h4>
-                            <a href="all-products.html">
-                                مشاهدة الكل
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </a>
-                        </div>
-                        <div class="catg-content">
-                            <div class="row justify-content-between gy-5">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="../assets/product-img.svg"
-                                                    alt="product"
-                                                />
+                        <div class="tab-content" id="pills-tabContent">
+                            <div
+                                class="tab-pane fade"
+                                id="pills-account"
+                                role="tabpanel"
+                                aria-labelledby="pills-account-tab"
+                                tabindex="0"
+                            >
+                                <div class="myaccount">
+                                    <div class="myinput">
+                                        <label>الاسم</label>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                placeholder="sara"
+                                            />
+                                            <span class="edit-icon"
+                                                ><i
+                                                    class="fa-regular fa-pen-to-square"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                    <div class="myinput">
+                                        <label>البريد الإلكتروني</label>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                placeholder="test@gmail.com"
+                                            />
+                                            <span class="edit-icon"
+                                                ><i
+                                                    class="fa-regular fa-pen-to-square"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                    <div class="myinput">
+                                        <label>رقم الجوال</label>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                placeholder="21440014776323"
+                                            />
+                                            <span class="edit-icon"
+                                                ><i
+                                                    class="fa-regular fa-pen-to-square"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                    <div class="save-btn">
+                                        <a href="#">حفظ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade show active"
+                                id="pills-orders"
+                                role="tabpanel"
+                                aria-labelledby="pills-orders-tab"
+                                tabindex="0"
+                            >
+                                <div class="all-orders">
+                                    <div class="order">
+                                        <div class="single-cell">
+                                            <div>
+                                                رقم الطلب : AEEGHDE1754541
                                             </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
+                                            <span
+                                                >مكيف هاير 22000 وحدة سبليت حار
+                                                بار-HSU-24HPB13/RT(T3)F</span
+                                            >
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>السعر</span>
+                                            <div>2900 ر.س</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>عدد العناصر</span>
+                                            <div>4</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span> طريقة الدفع</span>
+                                            <div>فيزا</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>حالة الطلب </span>
+                                            <div class="my-badge">معلق</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span> العنوان</span>
+                                            <div>
+                                                المملكة العربية السعودية,
+                                                الرياض, 12747885DFSCCW1
                                             </div>
                                         </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="../assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
+                                        <div class="delete">
+                                            <span
+                                                ><i
+                                                    class="fa-regular fa-trash-can"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                    <div class="order">
+                                        <div class="single-cell">
+                                            <div>
+                                                رقم الطلب : AEEGHDE1754541
+                                            </div>
+                                            <span
+                                                >مكيف هاير 22000 وحدة سبليت حار
+                                                بار-HSU-24HPB13/RT(T3)F</span
                                             >
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>السعر</span>
+                                            <div>2900 ر.س</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>عدد العناصر</span>
+                                            <div>4</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span> طريقة الدفع</span>
+                                            <div>فيزا</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>حالة الطلب </span>
+                                            <div class="my-badge">معلق</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span> العنوان</span>
+                                            <div>
+                                                المملكة العربية السعودية,
+                                                الرياض, 12747885DFSCCW1
+                                            </div>
+                                        </div>
+                                        <div class="delete">
+                                            <span
+                                                ><i
+                                                    class="fa-regular fa-trash-can"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </div>
+                                    <div class="order">
+                                        <div class="single-cell">
+                                            <div>
+                                                رقم الطلب : AEEGHDE1754541
+                                            </div>
+                                            <span
+                                                >مكيف هاير 22000 وحدة سبليت حار
+                                                بار-HSU-24HPB13/RT(T3)F</span
+                                            >
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>السعر</span>
+                                            <div>2900 ر.س</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>عدد العناصر</span>
+                                            <div>4</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span> طريقة الدفع</span>
+                                            <div>فيزا</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span>حالة الطلب </span>
+                                            <div class="my-badge">معلق</div>
+                                        </div>
+                                        <div class="single-cell">
+                                            <span> العنوان</span>
+                                            <div>
+                                                المملكة العربية السعودية,
+                                                الرياض, 12747885DFSCCW1
+                                            </div>
+                                        </div>
+                                        <div class="delete">
+                                            <span
+                                                ><i
+                                                    class="fa-regular fa-trash-can"
+                                                ></i
+                                            ></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="../assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="../assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="../assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="../assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="catg-card">
-                                        <div class="content">
-                                            <div class="img-product">
-                                                <img
-                                                    src="../assets/product-img.svg"
-                                                    alt="product"
-                                                />
-                                            </div>
-                                            <div class="description">
-                                                <span class="info"
-                                                    >مكيف هاير 22000 وحدة سبليت
-                                                    حار
-                                                    بار-HSU-24HPB13/RT(T3)F</span
-                                                >
-                                                <span
-                                                    ><span class="price"
-                                                        >4099 ر.س</span
-                                                    >
-                                                    <span class="sale"
-                                                        ><s>2999 ر.س</s></span
-                                                    >
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <div class="my-btns">
-                                            <a href="#">
-                                                <button
-                                                    class="add-to-cart-btn mb-2"
-                                                >
-                                                    <img
-                                                        src="../assets/cart.svg"
-                                                        alt="cart"
-                                                    />
-                                                    اضف الي العربة
-                                                </button>
-                                            </a>
-                                            <a href="#">
-                                                <button class="add-to-fav-btn">
-                                                    <i
-                                                        class="fa-regular fa-heart"
-                                                    ></i>
-                                                    اضف الي المفضلة
-                                                </button></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="pills-fav"
+                                role="tabpanel"
+                                aria-labelledby="pills-fav-tab"
+                                tabindex="0"
+                            >
+                                ...
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="pills-address"
+                                role="tabpanel"
+                                aria-labelledby="pills-address-tab"
+                                tabindex="0"
+                            >
+                                ...
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end row of categories -->
-
         <!-- start of footer -->
         <div class="devolum-footer">
             <div class="container-fluid">
@@ -1201,7 +1268,6 @@
             crossorigin="anonymous"
         ></script>
         <!-- js for bootstrap -->
-
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="../script.js"></script>
     </body>

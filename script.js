@@ -9,6 +9,14 @@ function closeNav() {
     document.body.style.overflow = "scroll";
     document.querySelector("html").style.overflow = "scroll";
 }
+//search
+function closeMobileSearch() {
+    document.getElementById("mysearch").style.display = "none";
+}
+function openMobileSearch() {
+    document.getElementById("mysearch").style.display = "flex";
+}
+//search
 
 //myswiper function
 var swiper1 = new Swiper(".mySwiper1", {
@@ -33,6 +41,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
+
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -78,37 +87,42 @@ var swiper5 = new Swiper(".mySwiper5", {
 });
 
 //count down function
-const newDate = new Date("June 31 23 00:16:00").getTime();
 
-const countdown = setInterval(() => {
-    const date = new Date().getTime();
-    const diff = newDate - date;
+if (document.getElementsByClassName("count-card").length > 0) {
+    const newDate = new Date("June 31 23 00:16:00").getTime();
+    const countdown = setInterval(() => {
+        const date = new Date().getTime();
+        const diff = newDate - date;
 
-    const days = Math.floor(
-        (diff % (1000 * 60 * 60 * 24 * (365.25 / 12))) / (1000 * 60 * 60 * 24)
-    );
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        const days = Math.floor(
+            (diff % (1000 * 60 * 60 * 24 * (365.25 / 12))) /
+                (1000 * 60 * 60 * 24)
+        );
+        const hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-    document.querySelector(".seconds").innerHTML =
-        seconds < 10 ? "0" + seconds : seconds;
-    document.querySelector(".minutes").innerHTML =
-        minutes < 10 ? "0" + minutes : minutes;
-    document.querySelector(".hours").innerHTML =
-        hours < 10 ? "0" + hours : hours;
-    document.querySelector(".days").innerHTML = days < 10 ? "0" + days : days;
+        document.querySelector(".seconds").innerHTML =
+            seconds < 10 ? "0" + seconds : seconds;
+        document.querySelector(".minutes").innerHTML =
+            minutes < 10 ? "0" + minutes : minutes;
+        document.querySelector(".hours").innerHTML =
+            hours < 10 ? "0" + hours : hours;
+        document.querySelector(".days").innerHTML =
+            days < 10 ? "0" + days : days;
 
-    if (diff < 0) {
-        console.log(diff, ",,,,,,,,,,");
-        clearInterval(countdown);
-        var numbers = document.querySelectorAll(".count-card");
-        for (var i = 0; i < numbers.length; i++) {
-            numbers[i].style.display = "none";
+        if (diff < 0) {
+            clearInterval(countdown);
+            var numbers = document.querySelectorAll(".count-card");
+            for (var i = 0; i < numbers.length; i++) {
+                numbers[i].style.display = "none";
+            }
+            document.querySelector(".expire-msg").style.display = "flex";
         }
-        document.querySelector(".expire-msg").style.display = "flex";
-    }
-}, 1000);
+    }, 1000);
+}
 //count down function
 
 //search input
@@ -136,7 +150,6 @@ window.onload = function loadSearchData() {
         let img = document.createElement("img");
         img.src = product.image;
         img.classList.add("search-img");
-        console.log(img, "srccccccc");
 
         a.appendChild(img);
         a.appendChild(span);
@@ -187,39 +200,39 @@ plusBtn.addEventListener("click", () => {
 
 //counter
 
-var starRating = document.querySelectorAll(".fa-star"),
-    ratingTotal = document.querySelectorAll(".rating-total");
+// var starRating = document.querySelectorAll(".fa-star"),
+//     ratingTotal = document.querySelectorAll(".rating-total");
 
-// convert ratingTotal HTMLCollection to array and reverse its order (5 star <-> 1 star)
-var reverseRatingTotal = Array.from(ratingTotal).reverse();
+// // convert ratingTotal HTMLCollection to array and reverse its order (5 star <-> 1 star)
+// var reverseRatingTotal = Array.from(ratingTotal).reverse();
 
-// display initial rating totals
-displayTotals();
+// // display initial rating totals
+// displayTotals();
 
-// use event listener to record changes to user rating
-starRating.forEach(function (star) {
-    star.addEventListener("click", recordRating);
-});
+// // use event listener to record changes to user rating
+// starRating.forEach(function (star) {
+//     star.addEventListener("click", recordRating);
+// });
 
-function recordRating(event) {
-    // use indexOf to identify selected user rating
-    var userRating = Array.from(starRating).indexOf(event.target);
+// function recordRating(event) {
+//     // use indexOf to identify selected user rating
+//     var userRating = Array.from(starRating).indexOf(event.target);
 
-    // define selected rating to adjust display totals
-    var selectedIndex;
+//     // define selected rating to adjust display totals
+//     var selectedIndex;
 
-    starRating.forEach(function (item, index) {
-        // add or remove .active class based upon selected user rating
-        if (index < userRating + 1) {
-            starRating[index].classList.add("active");
-            selectedIndex = index;
-        } else {
-            starRating[index].classList.remove("active");
-        }
+//     starRating.forEach(function (item, index) {
+//         // add or remove .active class based upon selected user rating
+//         if (index < userRating + 1) {
+//             starRating[index].classList.add("active");
+//             selectedIndex = index;
+//         } else {
+//             starRating[index].classList.remove("active");
+//         }
 
-        displayTotals(selectedIndex);
-    });
-}
+//         displayTotals(selectedIndex);
+//     });
+// }
 
 // display star rating totals from html custom data-
 // function displayTotals(selectedIndex) {
