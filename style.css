@@ -98,7 +98,7 @@ a {
 
 .my-badge {
   background-color: var(--badge-bg);
-  color: var(--badge-text);
+  color: var(--badge-text) !important;
   border-radius: 3px;
   width: 100%;
   height: 35px;
@@ -165,8 +165,8 @@ a {
 .devolum-bottom-header .bottom-header .mob-menu:hover {
   color: var(--primary-color);
 }
-.devolum-bottom-header .bottom-header .logo img {
-  width: 100%;
+.devolum-bottom-header .bottom-header .logo {
+  max-width: 135px;
 }
 .devolum-bottom-header .bottom-header .search {
   position: relative;
@@ -264,6 +264,31 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.devolum-bottom-header .bottom-header .myicons .modal-dialog .modal-content {
+  border-radius: 3px;
+}
+.devolum-bottom-header .bottom-header .myicons .modal-dialog .modal-content .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.devolum-bottom-header .bottom-header .myicons .modal-dialog .modal-content .modal-body span {
+  color: var(--third-color);
+}
+.devolum-bottom-header .bottom-header .myicons .modal-dialog .modal-content .modal-body .log-out-btn {
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+}
+.devolum-bottom-header .bottom-header .myicons .modal-dialog .modal-content .modal-body .log-out-btn:hover {
+  background-color: var(--hover-color);
 }
 .devolum-bottom-header #mysearch {
   display: none;
@@ -443,11 +468,6 @@ a {
     display: flex;
   }
 }
-@media (max-width: 780px) and (max-width: 425px) {
-  .devolum-bottom-header .bottom-header .logo img {
-    height: 39px;
-  }
-}
 
 .offcanvas .offcanvas-header h4 {
   text-decoration: underline;
@@ -460,7 +480,7 @@ a {
 .offcanvas .offcanvas-body .cart-offcanvas {
   height: calc(100vh - 200px);
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .offcanvas .offcanvas-body .cart-offcanvas .mycard {
   display: flex;
@@ -705,6 +725,7 @@ a {
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 .devolum-intro .count-down .counter .count-card {
   display: flex;
@@ -2286,6 +2307,86 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.devolum-profile-content .tab-content .tab-pane .empty-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.devolum-profile-content .tab-content .tab-pane .empty-orders img {
+  width: 100%;
+  height: 300px;
+}
+.devolum-profile-content .tab-content .tab-pane .empty-orders span {
+  color: var(--third-color);
+  margin-bottom: 15px;
+}
+.devolum-profile-content .tab-content .tab-pane .empty-orders a {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+}
+.devolum-profile-content .tab-content .tab-pane .empty-orders a:hover {
+  background-color: var(--hover-color);
+}
+.devolum-profile-content .tab-content .tab-pane .address {
+  box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+  padding: 15px 30px;
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card {
+  padding: 15px 0;
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card .address-cell {
+  display: flex;
+  flex-direction: column;
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card .address-cell .label-badge {
+  display: flex;
+  align-items: center;
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card .address-cell .label-badge .my-badge2 {
+  background-color: var(--second-bg-color);
+  color: var(--secondary-color);
+  border-radius: 3px;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card .address-cell span {
+  color: var(--sale-color);
+  margin-bottom: 20px;
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card .address-cell div {
+  color: var(--text-color);
+}
+.devolum-profile-content .tab-content .tab-pane .address .address-card:not(:nth-last-child(-n+2)) {
+  border-bottom: 1px solid var(--border-color);
+}
+.devolum-profile-content .tab-content .tab-pane .address .add-new-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devolum-profile-content .tab-content .tab-pane .address .add-new-address .new-address-btn {
+  border-radius: 3px;
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 45px;
+}
+.devolum-profile-content .tab-content .tab-pane .address .add-new-address .new-address-btn:hover {
+  background-color: var(--hover-color);
+}
 
 .devolum-title {
   margin-bottom: 30px;
@@ -2313,6 +2414,59 @@ a {
 }
 .devolum-title .title .refund-btn:hover {
   background-color: var(--hover-color);
+}
+.devolum-title .title .modal .modal-dialog .modal-content {
+  border-radius: 3px;
+  padding: 20px;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body h4 {
+  text-align: center;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .content {
+  display: flex;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .content input {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .content label {
+  font-size: 15px;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .quantity div {
+  margin: 0 10px;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .quantity #count {
+  color: var(--third-color);
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .quantity button {
+  border: 1px solid var(--sale-color);
+  border-radius: 3px;
+  background-color: var(--basic-color);
+  color: var(--sale-color);
+  padding: 1px 9px;
+  font-size: 15px;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .notes input {
+  width: 100%;
+  border: 1px solid var(--sale-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .notes input::-moz-placeholder {
+  color: var(--sale-color);
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .notes input::placeholder {
+  color: var(--sale-color);
+}
+.devolum-title .title .modal .modal-dialog .modal-content .modal-body .modal-refund-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .devolum-order-details .order-details {
@@ -2354,10 +2508,8 @@ a {
   padding: 30px;
   width: 100%;
 }
-@media (max-width: 600px) {
-  .devolum-order-product .order-product .order-product-labels {
-    display: none;
-  }
+.devolum-order-product .order-product .order-product-labels {
+  margin-bottom: 20px;
 }
 .devolum-order-product .order-product hr {
   border: 1px solid var(--product-color);
@@ -2368,7 +2520,6 @@ a {
 }
 .devolum-order-product .order-product .single-cell span {
   color: var(--sale-color);
-  margin-bottom: 20px;
 }
 .devolum-order-product .order-product .single-cell div {
   color: var(--text-color);
@@ -2381,15 +2532,23 @@ a {
   color: var(--text-color);
   margin-bottom: 0;
 }
+.devolum-order-product .order-product .single-cell .calender-icon,
+.devolum-order-product .order-product .single-cell .number-icon {
+  color: var(--secondary-color);
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  display: none;
+}
 @media (max-width: 760px) {
-  .devolum-order-product .order-product {
-    flex-direction: column;
+  .devolum-order-product .order-product .order-product-labels {
+    display: none;
   }
-  .devolum-order-product .order-product .single-cell span {
-    margin-bottom: 0;
+  .devolum-order-product .order-product hr {
+    display: none;
   }
-  .devolum-order-product .order-product .single-cell div {
-    margin-bottom: 20px;
+  .devolum-order-product .order-product .single-cell .calender-icon,
+  .devolum-order-product .order-product .single-cell .number-icon {
+    display: inline-block;
   }
 }
 
@@ -2409,4 +2568,58 @@ a {
 .devolum-invoice-address .invoice-address span {
   color: var(--third-color);
   margin-bottom: 15px;
+}
+
+.devolum-new-address .new-address-content {
+  box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+  padding: 30px;
+}
+.devolum-new-address .new-address-content .myinput {
+  display: flex;
+  flex-direction: column;
+}
+.devolum-new-address .new-address-content .myinput label {
+  color: var(--third-color);
+  margin-bottom: 5px;
+}
+.devolum-new-address .new-address-content .myinput input {
+  border: 1px solid var(--sale-color);
+  padding: 10px;
+  border-radius: 3px;
+}
+.devolum-new-address .new-address-content .myinput input ::-moz-placeholder {
+  color: var(--sale-color);
+}
+.devolum-new-address .new-address-content .myinput input ::placeholder {
+  color: var(--sale-color);
+}
+.devolum-new-address .new-address-content .myinput input:focus-visible {
+  outline: none;
+}
+.devolum-new-address .new-address-content .myinput select {
+  border: 1px solid var(--sale-color);
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--sale-color);
+}
+.devolum-new-address .new-address-content .myinput select option {
+  color: var(--sale-color);
+}
+.devolum-new-address .new-address-content .save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.devolum-new-address .new-address-content .save .save-btn {
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+}
+.devolum-new-address .new-address-content .save .save-btn:hover {
+  background-color: var(--hover-color);
 }/*# sourceMappingURL=style.css.map */

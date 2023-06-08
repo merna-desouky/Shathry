@@ -119,13 +119,48 @@
                                 </button>
                             </div>
                             <div class="myicons">
-                                <a href="#"
-                                    ><i class="fa-regular fa-user"></i
-                                    ><span> تسجيل دخول</span></a
+                                <a
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                                    ><i
+                                        class="fa-solid fa-arrow-right-from-bracket"
+                                    ></i
+                                    ><span> تسجيل خروج </span></a
                                 ><a href="#"
                                     ><i class="fa-regular fa-heart"></i>
                                     <span>المفضلة</span>
                                 </a>
+                                <div
+                                    class="modal fade"
+                                    id="exampleModal"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true"
+                                >
+                                    <div
+                                        class="modal-dialog modal-dialog-centered"
+                                    >
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <img
+                                                    src="../assets/power_icon_button.svg"
+                                                    width="100%"
+                                                    height="80px"
+                                                    class="mb-4"
+                                                />
+                                                <span class="mb-3"
+                                                    >هل تريد حذف المنتج
+                                                    بالفعل؟</span
+                                                >
+
+                                                <a href="#" class="log-out-btn"
+                                                    >تسجيل خروج</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <a
                                     data-bs-toggle="offcanvas"
                                     href="#offcanvasExample"
@@ -370,7 +405,6 @@
                                 </div>
                             </div>
                             <!-- offcanvas -->
-
                             <a
                                 class="search-icon"
                                 href="#"
@@ -856,7 +890,7 @@
                                     class="breadcrumb-item active"
                                     aria-current="page"
                                 >
-                                    المفضلة
+                                    حسابي
                                 </li>
                             </ol>
                         </div>
@@ -865,149 +899,134 @@
             </div>
         </div>
         <!-- end of bread crumb -->
-
-        <!-- start of contact -->
-        <section class="devolum-contact">
+        <section class="devolum-new-address">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="social-contact">
-                            <h4 class="mb-5">تواصل معنا</h4>
-                            <div class="contact-us">
-                                <div class="contact-card">
-                                    <i class="fa-solid fa-mobile-screen"></i>
-                                    <div>
-                                        <span>اتصل بنا</span
-                                        ><span>98410011443</span>
+                        <div class="new-address-content">
+                            <div class="row gy-4">
+                                <div class="col-md-4">
+                                    <div class="myinput">
+                                        <label for="name">الاسم</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="sara"
+                                        />
                                     </div>
                                 </div>
-                                <div class="contact-card">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    <div>
-                                        <span>واتساب</span
-                                        ><span>98410011443</span>
+                                <div class="col-md-4">
+                                    <div class="myinput">
+                                        <label for="name">الهاتف</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="ادخل رقم الهاتف"
+                                        />
                                     </div>
                                 </div>
-                                <div class="contact-card">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <div>
-                                        <span>اتصل بنا</span
-                                        ><span>98410011443</span>
+                                <div class="col-md-4">
+                                    <div class="myinput">
+                                        <label for="name"
+                                            >البريد الإلكتروني</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="saraaa.alii77@gmail.com"
+                                        />
                                     </div>
                                 </div>
-                                <div class="contact-card">
-                                    <i class="fa-solid fa-inbox"></i>
-                                    <div>
-                                        <span>اتصل بنا</span
-                                        ><span>98410011443</span>
+                                <div class="col-md-6">
+                                    <div class="myinput">
+                                        <label for="name">المحافظة</label
+                                        ><select
+                                            class="form-select"
+                                            aria-label="Default select example"
+                                            id="name"
+                                        >
+                                            <option selected>المحافظة</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div>
-                            <hr />
-                            <div class="send-msg">
-                                <h4 class="mb-5">ارسل رسالة مباشرة</h4>
-                                <div class="row gy-5">
-                                    <div class="col-lg-6 col-sm-12">
-                                        <div class="inputs">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-sm-12">
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="الاسم الأول"
-                                                    />
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="رقم الهاتف"
-                                                    />
-                                                    <div class="dropdown">
-                                                        <button
-                                                            class="btn btn-secondary dropdown-toggle"
-                                                            type="button"
-                                                            id="dropdownMenuButton1"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false"
-                                                        >
-                                                            الموضوع
-                                                        </button>
-                                                        <ul
-                                                            class="dropdown-menu"
-                                                            aria-labelledby="dropdownMenuButton1"
-                                                        >
-                                                            <li>
-                                                                <a
-                                                                    class="dropdown-item"
-                                                                    href="#"
-                                                                    >Action</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    class="dropdown-item"
-                                                                    href="#"
-                                                                    >Another
-                                                                    action</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    class="dropdown-item"
-                                                                    href="#"
-                                                                    >Something
-                                                                    else here</a
-                                                                >
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-sm-12">
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="الاسم الأخير"
-                                                    />
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="البريد الإلكتروني"
-                                                    />
-                                                    <input
-                                                        class="myinput"
-                                                        placeholder="إضافة تعليق"
-                                                    />
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <button class="save">
-                                                        حفظ
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="myinput">
+                                        <label for="name">المدينة</label
+                                        ><select
+                                            class="form-select"
+                                            aria-label="Default select example"
+                                            id="name"
+                                        >
+                                            <option selected>المدينة</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
-                                    <div class="col-lg-6 col-sm-12">
-                                        <div class="google-map">
-                                            <iframe
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
-                                                width="600"
-                                                height="450"
-                                                style="border: 0"
-                                                allowfullscreen=""
-                                                loading="lazy"
-                                                referrerpolicy="no-referrer-when-downgrade"
-                                            ></iframe>
-                                        </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="myinput">
+                                        <label for="name">العنوان</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="ادخل العنوان"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="myinput">
+                                        <label for="name">رقم المبنى</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="ادخل رقم المبنى"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="myinput">
+                                        <label for="name">الدور</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="ادخل رقم الدور"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="myinput">
+                                        <label for="name">الشقة</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="ادخل رقم الشقة"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="myinput">
+                                        <label for="name">ملاحظة</label
+                                        ><input
+                                            id="name"
+                                            type="text"
+                                            placeholder="ادخل الملاحظات"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="save">
+                                        <a class="save-btn" href="#">حفظ</a>
                                     </div>
                                 </div>
                             </div>
-                            <img
-                                src="../assets/bg-img.png"
-                                class="bg-img"
-                                alt="bg-img"
-                            />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end of contact -->
-
         <!-- start of footer -->
         <div class="devolum-footer">
             <div class="container-fluid">

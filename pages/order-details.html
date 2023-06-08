@@ -33,7 +33,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
 
-        <link rel="stylesheet" href="../style.css?v=456" />
+        <link rel="stylesheet" href="../style.css?v=123" />
     </head>
     <body>
         <!-- start of top bar -->
@@ -120,8 +120,10 @@
                             </div>
                             <div class="myicons">
                                 <a href="#"
-                                    ><i class="fa-regular fa-user"></i
-                                    ><span> تسجيل دخول</span></a
+                                    ><i
+                                        class="fa-solid fa-arrow-right-from-bracket"
+                                    ></i
+                                    ><span> تسجيل خروج </span></a
                                 ><a href="#"
                                     ><i class="fa-regular fa-heart"></i>
                                     <span>المفضلة</span>
@@ -875,12 +877,7 @@
                     <div class="col-12">
                         <div class="title">
                             <h4>تفاصيل الطلب</h4>
-                            <!-- <button
-                                class="refund-btn"
-                                ata-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
-                            >
-                                استرجاع طلب</button -->
+
                             <button
                                 type="button"
                                 class="refund-btn"
@@ -897,37 +894,160 @@
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true"
                             >
-                                <div class="modal-dialog modal-lg">
+                                <div
+                                    class="modal-dialog modal-xl modal-dialog-centered"
+                                >
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1
-                                                class="modal-title fs-5"
-                                                id="exampleModalLabel"
-                                            >
-                                                Modal title
-                                            </h1>
-                                            <button
-                                                type="button"
-                                                class="btn-close"
-                                                data-bs-dismiss="modal"
-                                                aria-label="Close"
-                                            ></button>
-                                        </div>
-                                        <div class="modal-body">...</div>
-                                        <div class="modal-footer">
-                                            <button
-                                                type="button"
-                                                class="btn btn-secondary"
-                                                data-bs-dismiss="modal"
-                                            >
-                                                Close
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-primary"
-                                            >
-                                                Save changes
-                                            </button>
+                                        <div class="modal-body">
+                                            <h4 class="mb-5">المنتجات</h4>
+                                            <div class="row g-4 mb-5">
+                                                <div class="col-md-3">
+                                                    <div class="content">
+                                                        <input
+                                                            type="checkbox"
+                                                        />
+                                                        <label
+                                                            >مكيف هاير 22000
+                                                            وحدة سبليت حار
+                                                            بار</label
+                                                        >
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="quantity">
+                                                        <button id="minus-btn">
+                                                            -
+                                                        </button>
+
+                                                        <div id="count">0</div>
+
+                                                        <button id="plus-btn">
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="my-badge">
+                                                        معلق
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="my-badge">
+                                                        تم الاسترجاع
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="notes">
+                                                        <input
+                                                            type="text"
+                                                            placeholder="ادخل الملاحظات"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row g-4 mb-5">
+                                                <div class="col-md-3">
+                                                    <div class="content">
+                                                        <input
+                                                            type="checkbox"
+                                                        />
+                                                        <label
+                                                            >مكيف هاير 22000
+                                                            وحدة سبليت حار
+                                                            بار</label
+                                                        >
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="quantity">
+                                                        <button id="minus-btn">
+                                                            -
+                                                        </button>
+
+                                                        <div id="count">0</div>
+
+                                                        <button id="plus-btn">
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="my-badge">
+                                                        معلق
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="my-badge">
+                                                        تم الاسترجاع
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="notes">
+                                                        <input
+                                                            type="text"
+                                                            placeholder="ادخل الملاحظات"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row g-4 mb-5">
+                                                <div class="col-md-3">
+                                                    <div class="content">
+                                                        <input
+                                                            type="checkbox"
+                                                        />
+                                                        <label
+                                                            >مكيف هاير 22000
+                                                            وحدة سبليت حار
+                                                            بار</label
+                                                        >
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="quantity">
+                                                        <button id="minus-btn">
+                                                            -
+                                                        </button>
+
+                                                        <div id="count">0</div>
+
+                                                        <button id="plus-btn">
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="my-badge">
+                                                        معلق
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="my-badge">
+                                                        تم الاسترجاع
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="notes">
+                                                        <input
+                                                            type="text"
+                                                            placeholder="ادخل الملاحظات"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="modal-refund-btn">
+                                                    <a
+                                                        href="#"
+                                                        class="refund-btn"
+                                                        >استرجاع طلب</a
+                                                    >
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -949,7 +1069,7 @@
                                 <div class="col-md-2 col-6">
                                     <div class="single-cell">
                                         <span>رقم الطلب </span>
-                                        <div>AEEGHDE1AEEGHDE175454</div>
+                                        <div>AEEGHGHDE175454</div>
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-6">
@@ -1039,12 +1159,26 @@
                                     </div>
                                     <div class="col-md-3 col-6">
                                         <div class="single-cell">
-                                            <div>15/6/2023</div>
+                                            <div>
+                                                <span class="calender-icon"
+                                                    ><i
+                                                        class="fa-regular fa-calendar-days"
+                                                    ></i
+                                                ></span>
+                                                15/6/2023
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-6">
                                         <div class="single-cell">
-                                            <div>2</div>
+                                            <div>
+                                                <span class="number-icon"
+                                                    ><i
+                                                        class="fa-solid fa-boxes-stacked"
+                                                    ></i
+                                                ></span>
+                                                2
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-12">
