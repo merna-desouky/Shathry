@@ -38,14 +38,15 @@ var swiper1 = new Swiper(".mySwiper1", {
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-
+    fadeEffect: { crossFade: true },
+    virtualTranslate: true,
     autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: true,
     },
+    speed: 1200,
+    slidersPerView: 1,
+    effect: "fade",
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -59,7 +60,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 var swiper3 = new Swiper(".mySwiper3", {
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 3,
+    slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
 });

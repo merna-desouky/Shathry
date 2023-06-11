@@ -101,6 +101,7 @@
                                 <img
                                     src="../assets/imgs/store-logo.svg"
                                     alt="logo"
+                                    class="img-fluid"
                                 />
                             </a>
                             <div class="search">
@@ -746,6 +747,12 @@
                                         class="img-fluid"
                                     />
                                 </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        src="../assets/imgs/single-product.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -788,13 +795,38 @@
                                         بارد12,000 (H/C) م/MSTE12HRN2AB4</span
                                     >
                                 </div>
-                                <a href="#">
-                                    <i class="fa-solid fa-share-nodes"></i
-                                ></a>
+
+                                <div class="share-box text-center">
+                                    <ul>
+                                        <li class="border_right">
+                                            <div
+                                                class="a2a_kit a2a_default_style"
+                                                data-a2a-url="#"
+                                                data-a2a-title="Trinx junior 1.0"
+                                            >
+                                                <a
+                                                    class="a2a_dd"
+                                                    href="https://www.addtoany.com/share"
+                                                >
+                                                    <i
+                                                        class="fas fa-share-alt"
+                                                    ></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="sold-by mb-4">
                                 <span class="info-type">تباع من قبل :</span>
-                                <span>ميديا</span>
+                                <a href="#">ميديا</a>
+                            </div>
+                            <div class="price mb-4">
+                                <span class="info-type">السعر :</span>
+                                <div class="price-number">
+                                    <span class="number">2999 ر.س</span>
+                                    <span class="sale"><s>2999 ر.س</s></span>
+                                </div>
                             </div>
                             <div class="color mb-4">
                                 <span class="info-type"> اللون :</span>
@@ -868,21 +900,13 @@
 
                                 <button id="plus-btn">+</button>
                             </div>
-                            <div class="price mb-4">
-                                <span class="info-type">السعر :</span>
-                                <div class="price-number">
-                                    <span class="number">2999 ر.س</span>
-                                    <span class="sale"><s>2999 ر.س</s></span>
-                                </div>
-
-                                <div class="mybtns">
-                                    <a class="add-to-cart-btn" href="#">
-                                        اضف الي العربة
-                                    </a>
-                                    <a class="add-to-fav-btn" href="#">
-                                        اضف الي المفضلة
-                                    </a>
-                                </div>
+                            <div class="mybtns">
+                                <a class="add-to-cart-btn" href="#">
+                                    اضف الي العربة
+                                </a>
+                                <a class="add-to-fav-btn" href="#">
+                                    اضف الي المفضلة
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1716,6 +1740,8 @@
             crossorigin="anonymous"
         ></script>
         <!-- js for bootstrap -->
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="../assets/js/script.js"></script>
     </body>

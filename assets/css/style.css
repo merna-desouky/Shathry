@@ -1418,6 +1418,10 @@ a {
   padding: 5px 10px;
   width: 20%;
 }
+.devolum-single-product .content-of-single-product .size select:focus {
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+}
 @media (max-width: 660px) {
   .devolum-single-product .content-of-single-product .size select {
     width: 45%;
@@ -1454,24 +1458,23 @@ a {
 }
 .devolum-single-product .content-of-single-product .price .price-number {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  -webkit-margin-end: 20px;
-          margin-inline-end: 20px;
 }
 .devolum-single-product .content-of-single-product .price .price-number .number {
   color: var(--secondary-color);
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 .devolum-single-product .content-of-single-product .price .price-number .sale {
   color: var(--sale-color);
-  font-size: 12px;
+  font-size: 13px;
 }
-.devolum-single-product .content-of-single-product .price .mybtns {
+.devolum-single-product .content-of-single-product .mybtns {
   display: flex;
   align-items: center;
   width: 80%;
 }
-.devolum-single-product .content-of-single-product .price .mybtns .add-to-cart-btn {
+.devolum-single-product .content-of-single-product .mybtns .add-to-cart-btn {
   background-color: var(--secondary-color);
   color: var(--basic-color);
   border-radius: 3px;
@@ -1486,13 +1489,13 @@ a {
   -webkit-margin-end: 20px;
           margin-inline-end: 20px;
 }
-.devolum-single-product .content-of-single-product .price .mybtns .add-to-cart-btn img {
+.devolum-single-product .content-of-single-product .mybtns .add-to-cart-btn img {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(73deg) brightness(102%) contrast(101%);
 }
-.devolum-single-product .content-of-single-product .price .mybtns .add-to-cart-btn:hover {
+.devolum-single-product .content-of-single-product .mybtns .add-to-cart-btn:hover {
   background-color: var(--hover-color);
 }
-.devolum-single-product .content-of-single-product .price .mybtns .add-to-fav-btn {
+.devolum-single-product .content-of-single-product .mybtns .add-to-fav-btn {
   background-color: var(--primary-color);
   color: var(--basic-color);
   border-radius: 3px;
@@ -1505,14 +1508,15 @@ a {
   font-size: 14px;
   text-align: center;
 }
-.devolum-single-product .content-of-single-product .price .mybtns .add-to-fav-btn:hover {
+.devolum-single-product .content-of-single-product .mybtns .add-to-fav-btn:hover {
   background-color: var(--second-hover-color);
 }
 @media (max-width: 500px) {
-  .devolum-single-product .content-of-single-product .price .mybtns {
+  .devolum-single-product .content-of-single-product .mybtns {
     flex-direction: column;
+    width: 100%;
   }
-  .devolum-single-product .content-of-single-product .price .mybtns .add-to-cart-btn {
+  .devolum-single-product .content-of-single-product .mybtns .add-to-cart-btn {
     -webkit-margin-end: 0;
             margin-inline-end: 0;
     margin-bottom: 10px;
