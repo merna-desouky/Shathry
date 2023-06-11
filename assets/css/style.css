@@ -44,6 +44,12 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  text-decoration: underline;
+  text-underline-offset: 13px;
+  text-decoration-color: var(--secondary-color);
+}
+
 .float-whats {
   position: fixed;
   width: 50px;
@@ -105,6 +111,117 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+  padding: 10px 20px;
+}
+.order-details .coupon {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.order-details .coupon .coupon-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.order-details .coupon .coupon-title span {
+  color: var(--third-color);
+}
+.order-details .coupon .coupon-title a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.order-details .coupon input {
+  width: 100%;
+  border: 1px solid var(--sale-color);
+  border-radius: 3px;
+  padding: 10px;
+}
+.order-details .coupon input::-moz-placeholder {
+  color: var(--sale-color);
+}
+.order-details .coupon input::placeholder {
+  color: var(--sale-color);
+}
+.order-details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.order-details div span:first-child {
+  color: var(--sale-color);
+  font-size: 14px;
+}
+.order-details div span:last-child {
+  color: var(--third-color);
+  font-size: 14px;
+}
+.order-details .total {
+  border-top: 1px solid var(--product-color);
+  border-bottom: 1px solid var(--product-color);
+  padding: 15px 0;
+}
+.order-details .total span:first-child {
+  font-weight: 700;
+  color: var(--text-color);
+}
+.order-details .product-view {
+  display: flex;
+}
+.order-details .product-view .myimg {
+  max-width: 90px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.order-details .product-view .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.order-details .product-view .product-info .title {
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+.order-details .product-view .product-info .quantity {
+  color: var(--sale-color);
+}
+.order-details .continue-btn {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+}
+.order-details .continue-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.add-new-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-new-address .new-address-btn {
+  border-radius: 3px;
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 45px;
+}
+.add-new-address .new-address-btn:hover {
+  background-color: var(--hover-color);
 }
 
 .devolum-top-header {
@@ -469,11 +586,6 @@ a {
   }
 }
 
-.offcanvas .offcanvas-header h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
-}
 .offcanvas .offcanvas-body {
   position: relative;
 }
@@ -824,11 +936,6 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
 }
-.devolum-categories-view .headline h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
-}
 .devolum-categories-view .headline a {
   color: var(--secondary-color);
 }
@@ -850,10 +957,10 @@ a {
 }
 .devolum-categories-view .catg-content .catg-card .content .img-product {
   position: relative;
+  max-height: 300px;
 }
 .devolum-categories-view .catg-content .catg-card .content .img-product img {
   width: 100%;
-  height: 255px;
 }
 .devolum-categories-view .catg-content .catg-card .content .img-product .discount {
   position: absolute;
@@ -987,9 +1094,6 @@ a {
   flex-direction: column;
 }
 .devolum-categories-view .filter h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
   margin-bottom: 40px;
 }
 .devolum-categories-view .filter .filter-card {
@@ -1039,8 +1143,6 @@ a {
 }
 .devolum-contact .social-contact h4 {
   color: var(--basic-color);
-  text-decoration: underline;
-  text-decoration-color: var(--secondary-color);
   text-underline-offset: 20px;
 }
 .devolum-contact .social-contact .contact-us {
@@ -1392,22 +1494,17 @@ a {
 .devolum-single-product .content-of-single-product .sold-by :last-child {
   color: var(--primary-color);
 }
-.devolum-single-product .content-of-single-product .color input {
-  display: none;
+.devolum-single-product .content-of-single-product .color {
+  display: flex;
 }
-.devolum-single-product .content-of-single-product .color label {
-  height: 20px;
-  width: 20px;
+.devolum-single-product .content-of-single-product .color a {
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
-}
-.devolum-single-product .content-of-single-product .color label:nth-child(3) {
-  background-color: var(--text-color);
-}
-.devolum-single-product .content-of-single-product .color label:nth-child(5) {
-  background-color: var(--text-color);
-}
-.devolum-single-product .content-of-single-product .color label:nth-child(7) {
-  background-color: var(--text-color);
+  background-color: var(--hover-color);
+  display: flex;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 .devolum-single-product .content-of-single-product .size {
   display: flex;
@@ -1420,7 +1517,7 @@ a {
 }
 .devolum-single-product .content-of-single-product .size select:focus {
   box-shadow: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--sale-color);
 }
 @media (max-width: 660px) {
   .devolum-single-product .content-of-single-product .size select {
@@ -1733,11 +1830,6 @@ a {
   text-align: start;
   padding: 35px 50px;
 }
-.info-and-reviews .tab-content .tab-pane .content .all-comments .modal-dialog .modal-content .modal-body h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
-}
 .info-and-reviews .tab-content .tab-pane .content .all-comments .modal-dialog .modal-content .modal-body span {
   color: var(--third-color);
   font-size: 15px;
@@ -1803,11 +1895,6 @@ a {
   padding: 30px 50px;
   margin: 30px 150px;
   border-radius: 3px;
-}
-.devolum-sign-up .sign-up h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
 }
 .devolum-sign-up .sign-up span {
   font-size: 15px;
@@ -1942,11 +2029,6 @@ a {
   background-color: var(--hover-color);
 }
 
-.devolum-cart h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
-}
 .devolum-cart .mycart {
   display: flex;
   flex-direction: column;
@@ -2074,48 +2156,6 @@ a {
   .devolum-cart .mycart .card-cart .info .quantity button {
     padding: 0px 6px;
   }
-}
-.devolum-cart .order-details {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
-  padding: 10px 20px;
-}
-.devolum-cart .order-details div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.devolum-cart .order-details div span:first-child {
-  color: var(--sale-color);
-  font-size: 14px;
-}
-.devolum-cart .order-details div span:last-child {
-  color: var(--third-color);
-  font-size: 14px;
-}
-.devolum-cart .order-details .total {
-  border-top: 1px solid var(--sale-color);
-  border-bottom: 1px solid var(--sale-color);
-  padding: 15px 0;
-}
-.devolum-cart .order-details .total span:first-child {
-  font-weight: 700;
-  color: var(--text-color);
-}
-.devolum-cart .order-details .continue-btn {
-  background-color: var(--secondary-color);
-  border-radius: 3px;
-  color: var(--basic-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 45px;
-}
-.devolum-cart .order-details .continue-btn:hover {
-  background-color: var(--hover-color);
 }
 .devolum-cart .continue {
   color: var(--secondary-color);
@@ -2373,24 +2413,6 @@ a {
 .devolum-profile-content .tab-content .tab-pane .address .address-card:not(:nth-last-child(-n+2)) {
   border-bottom: 1px solid var(--border-color);
 }
-.devolum-profile-content .tab-content .tab-pane .address .add-new-address {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.devolum-profile-content .tab-content .tab-pane .address .add-new-address .new-address-btn {
-  border-radius: 3px;
-  background-color: var(--secondary-color);
-  color: var(--basic-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 45px;
-}
-.devolum-profile-content .tab-content .tab-pane .address .add-new-address .new-address-btn:hover {
-  background-color: var(--hover-color);
-}
 
 .devolum-title {
   margin-bottom: 30px;
@@ -2399,11 +2421,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.devolum-title .title h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
 }
 .devolum-title .title .refund-btn {
   background-color: var(--secondary-color);
@@ -2501,9 +2518,6 @@ a {
   margin-bottom: 30px;
 }
 .devolum-order-product h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
   margin-bottom: 30px;
 }
 .devolum-order-product .order-product {
@@ -2564,9 +2578,6 @@ a {
   padding: 30px;
 }
 .devolum-invoice-address .invoice-address h4 {
-  text-decoration: underline;
-  text-underline-offset: 13px;
-  text-decoration-color: var(--secondary-color);
   margin-bottom: 30px;
 }
 .devolum-invoice-address .invoice-address span {
@@ -2606,6 +2617,10 @@ a {
   border-radius: 3px;
   color: var(--sale-color);
 }
+.devolum-new-address .new-address-content .myinput select:focus {
+  box-shadow: none;
+  border: 1px solid var(--sale-color);
+}
 .devolum-new-address .new-address-content .myinput select option {
   color: var(--sale-color);
 }
@@ -2626,4 +2641,73 @@ a {
 }
 .devolum-new-address .new-address-content .save .save-btn:hover {
   background-color: var(--hover-color);
+}
+
+.devolum-shipping .shipping {
+  box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.devolum-shipping .shipping .label-badge {
+  display: flex;
+  align-items: center;
+}
+.devolum-shipping .shipping .label-badge .my-badge2 {
+  background-color: var(--second-bg-color);
+  color: var(--secondary-color);
+  border-radius: 3px;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+.devolum-shipping .shipping span {
+  color: var(--sale-color);
+  margin-bottom: 20px;
+}
+.devolum-shipping .shipping div {
+  color: var(--text-color);
+}
+.devolum-shipping hr {
+  border: 1px solid var(--product-color);
+}
+.devolum-shipping .myinput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.devolum-shipping .myinput label {
+  color: var(--third-color);
+  margin-bottom: 7px;
+}
+.devolum-shipping .myinput input {
+  border: 1px solid var(--sale-color);
+  border-radius: 3px;
+  padding: 8px;
+  text-align: right;
+  width: 100%;
+}
+.devolum-shipping .myinput input::-moz-placeholder {
+  color: var(--sale-color);
+}
+.devolum-shipping .myinput input::placeholder {
+  color: var(--sale-color);
+}
+.devolum-shipping .myinput input:focus-visible {
+  outline: var(--sale-color) auto 1px;
+}
+.devolum-shipping select {
+  border: 1px solid var(--sale-color);
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--sale-color);
+}
+.devolum-shipping select:focus {
+  box-shadow: none;
+  border: 1px solid var(--sale-color);
+}
+.devolum-shipping select option {
+  color: var(--sale-color);
 }/*# sourceMappingURL=style.css.map */
