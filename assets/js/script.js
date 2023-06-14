@@ -21,6 +21,7 @@ function openMobileSearch() {
 //myswiper function
 var swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 30,
+    slidersPerView: 1,
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -30,10 +31,6 @@ var swiper1 = new Swiper(".mySwiper1", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
     },
 });
 
@@ -46,6 +43,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
     speed: 1200,
     slidersPerView: 1,
+    loop: true,
     effect: "fade",
     pagination: {
         el: ".swiper-pagination",

@@ -705,7 +705,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img
-                                        src="../assets/imgs/single-product.png"
+                                        src="../assets/imgs/135f0832-b271-4699-b6d6-ef5f2682d1d2.jpg"
                                         alt="product"
                                         class="img-fluid"
                                     />
@@ -831,6 +831,28 @@
                                 <span class="info-type">تباع من قبل :</span>
                                 <a href="#">ميديا</a>
                             </div>
+                            <div class="stock mb-4">
+                                <span class="out-of-stock me-5">
+                                    <div class="myimg">
+                                        <img
+                                            src="../assets/imgs/🦆 emoji _white frowning face_.svg"
+                                            class="img-fluid"
+                                            alt="out-of-stock"
+                                        />
+                                    </div>
+                                    <span> نفذ </span>
+                                </span>
+                                <span class="low-of-stock">
+                                    <div class="myimg">
+                                        <img
+                                            src="../assets/imgs/🦆 emoji _neutral face_.svg"
+                                            class="img-fluid"
+                                            alt="out-of-stock"
+                                        />
+                                    </div>
+                                    <span> متبقي 2 </span>
+                                </span>
+                            </div>
                             <div class="price mb-4">
                                 <span class="info-type">السعر :</span>
                                 <div class="price-number">
@@ -840,10 +862,35 @@
                             </div>
                             <div class="color mb-4">
                                 <span class="info-type"> اللون :</span>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
+                                <input
+                                    type="checkbox"
+                                    id="vehicle1"
+                                    name="vehicle1"
+                                    value="Bike"
+                                />
+                                <label for="vehicle1"></label>
+                                <input
+                                    type="checkbox"
+                                    id="vehicle2"
+                                    name="vehicle2"
+                                    value="Bike"
+                                />
+                                <label for="vehicle2"> </label>
+                                <input
+                                    type="checkbox"
+                                    id="vehicle3"
+                                    name="vehicle3"
+                                    value="Bike"
+                                />
+                                <label for="vehicle3"> </label>
+                                <div class="alert mb-4">
+                                    <i
+                                        class="fa-solid fa-circle-exclamation"
+                                    ></i>
+                                    <span> {{ $message }}</span>
+                                </div>
                             </div>
+
                             <div class="size mb-4">
                                 <label for="size" class="info-type">
                                     الحجم :
@@ -1634,7 +1681,7 @@
                 <div class="row gy-5">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="content">
-                            <a href="#" class="mb-4"
+                            <a href="#" class="logo mb-4"
                                 ><img
                                     src="../assets/imgs/store-logo.svg"
                                     alt="logo"
