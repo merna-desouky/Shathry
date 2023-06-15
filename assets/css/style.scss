@@ -385,7 +385,7 @@ h4 {
                     margin-inline-end: 15px;
                 }
             }
-            :last-child {
+            .cart-icon {
                 position: relative;
 
                 .counter {
@@ -525,7 +525,7 @@ h4 {
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            padding: 25px 25px;
+            padding: 25px;
             .closebtn {
                 font-size: 20px;
                 background-color: var(--basic-color);
@@ -591,19 +591,37 @@ h4 {
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-
-            div {
+            padding: 10px 0 0 0;
+            .social-icons {
+                margin-bottom: 3px;
                 i {
                     font-size: 25px;
-
                     color: var(--basic-color);
                     &:not(:last-child) {
                         margin-inline-end: 10px;
                     }
                 }
             }
-            p {
-                font-size: 10px;
+            .flag {
+                width: 100%;
+                padding: 0 10px;
+                color: var(--basic-color);
+                border: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid #384aa0;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    i {
+                        color: var(--basic-color);
+                        font-size: 13px;
+                    }
+                }
+                span {
+                    font-size: 9px;
+                }
             }
         }
     }
@@ -754,11 +772,77 @@ h4 {
                         background-color: var(--second-hover-color);
                     }
                 }
+                @media (max-width: 400px) {
+                    .cart-btn,
+                    .continue-btn {
+                        width: 130px;
+                    }
+                }
             }
         }
     }
 }
 //end of offcanvas
+
+//start mobile bar
+
+.mobile-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    background-color: var(--basic-color);
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    a {
+        i {
+            color: var(--sale-color);
+            font-size: 20px;
+        }
+        &:hover,
+        &:active {
+            i {
+                color: var(--secondary-color);
+            }
+        }
+    }
+    .cart-icon {
+        position: relative;
+        img {
+            filter: invert(74%) sepia(7%) saturate(13%) hue-rotate(29deg)
+                brightness(91%) contrast(93%);
+        }
+        .counter {
+            position: absolute;
+            top: -7px;
+            right: -10px;
+            font-size: 10px;
+            background-color: var(--secondary-color);
+            color: var(--basic-color);
+            border-radius: 50px;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:hover,
+        &:active {
+            filter: invert(18%) sepia(99%) saturate(6342%) hue-rotate(352deg)
+                brightness(94%) contrast(80%);
+        }
+    }
+    @media (max-width: 780px) {
+        display: flex;
+    }
+}
+
+//end mobile bar
 
 //start of categories
 .devolum-categories {
@@ -1250,6 +1334,19 @@ h4 {
                     color: var(--third-color);
                 }
             }
+        }
+    }
+    .clear-filter {
+        display: flex;
+        align-items: center;
+
+        .myicon {
+            max-width: 15px;
+            margin-inline-end: 5px;
+        }
+        a {
+            color: var(--secondary-color);
+            text-decoration: underline;
         }
     }
 }

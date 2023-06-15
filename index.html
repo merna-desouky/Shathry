@@ -129,6 +129,7 @@
                                     <span>المفضلة</span>
                                 </a>
                                 <a
+                                    class="cart-icon"
                                     data-bs-toggle="offcanvas"
                                     href="#offcanvasExample"
                                     role="button"
@@ -142,6 +143,7 @@
                                     <span class="counter">44</span>
                                 </a>
                             </div>
+
                             <!-- offcanvas -->
                             <div
                                 class="offcanvas offcanvas-start"
@@ -451,10 +453,6 @@
                             style="transform: translateX(100%)"
                         >
                             <div class="topbar">
-                                <!-- <a href="./index.html" class="logo"
-                                    ><img
-                                        src="/asstes/hvIgSd2n9hLwq2QX2FntKqWsN7Qnq4pC8HvDufbu 1.svg"
-                                /></a> -->
                                 <h5>الاقسام</h5>
                                 <a
                                     href="javascript:void(0)"
@@ -594,14 +592,24 @@
                                 </ul>
                             </div>
                             <div class="bottombar">
-                                <div>
+                                <div class="social-icons">
                                     <i class="fa-brands fa-square-facebook"></i>
                                     <i class="fa-brands fa-linkedin"></i>
                                     <i class="fa-brands fa-square-twitter"></i
                                     ><i class="fa-brands fa-square-whatsapp"></i
                                     ><i class="fa-solid fa-square-phone"></i>
                                 </div>
-                                <p>جميع الحقوق محفوظه لدي الفنار جروب</p>
+                                <div class="flag">
+                                    <button type="button">
+                                        <i
+                                            class="fa-solid fa-earth-americas"
+                                        ></i>
+                                    </button>
+                                    <span
+                                        >جميع الحقوق محفوظه لدي الفنار
+                                        جروب</span
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -609,6 +617,22 @@
             </div>
         </div>
         <!-- end of bottom bar -->
+
+        <div class="mobile-bar">
+            <a href="#"><i class="fa-solid fa-house-user"></i> </a>
+            <a href="#"><i class="fa-regular fa-heart"></i> </a>
+            <a
+                class="cart-icon"
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><img src="assets/imgs/cart.svg" alt="cart" class="img-fluid" />
+
+                <span class="counter">44</span>
+            </a>
+            <a href="#"><i class="fa-regular fa-user"></i> </a>
+        </div>
 
         <!-- start of categories -->
         <section class="devolum-categories">
@@ -808,6 +832,7 @@
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="catg-title-no-arrow">
                                 <a href="#"> العناية الشخصية </a>
                             </li>
