@@ -49,6 +49,11 @@ h4 {
     text-underline-offset: 13px;
     text-decoration-color: var(--secondary-color);
 }
+.form-check-input:checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
 .out-of-stock {
     color: var(--secondary-color);
     display: flex;
@@ -139,7 +144,22 @@ h4 {
     flex-direction: column;
     box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
     padding: 10px 20px;
+    .shipping-company {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
 
+        label {
+            display: flex;
+            align-items: center;
+            .myimg {
+                margin-inline-end: 10px;
+                max-width: 65px;
+                margin-bottom: 0;
+            }
+        }
+    }
     .coupon {
         display: flex;
         flex-direction: column;
@@ -1355,7 +1375,7 @@ h4 {
 //start of banner
 .devolum-banner {
     .banner {
-        max-height: 330px;
+        max-height: 600px;
         img {
             width: 100%;
             border-radius: 3px;
@@ -2303,9 +2323,11 @@ h4 {
         box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
         border-radius: 3px;
         padding: 10px;
-
+        margin-bottom: 30px;
         .card-cart {
-            border-bottom: 1px solid var(--border-color);
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--border-color);
+            }
             padding: 20px 0;
             .product-title {
                 display: flex;
@@ -2966,24 +2988,37 @@ h4 {
         box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
         padding: 20px;
         margin-bottom: 30px;
-        .label-badge {
+        .choose-address {
             display: flex;
             align-items: center;
+            .myradio-btn {
+                margin-inline-end: 25px;
+                .form-check-input[type="radio"] {
+                    border-color: var(--third-color);
+                }
+            }
+            .myaddress {
+                .label-badge {
+                    display: flex;
+                    align-items: center;
 
-            .my-badge2 {
-                background-color: var(--second-bg-color);
-                color: var(--secondary-color);
-                border-radius: 3px;
-                padding: 7px 15px;
-                font-size: 14px;
-                font-weight: 500;
-                margin-bottom: 0;
-                margin-inline-start: 15px;
+                    .my-badge2 {
+                        background-color: var(--second-bg-color);
+                        color: var(--secondary-color);
+                        border-radius: 3px;
+                        padding: 7px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        margin-inline-start: 15px;
+                    }
+                }
             }
         }
         span {
             color: var(--sale-color);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            display: inline-block;
         }
         div {
             color: var(--text-color);

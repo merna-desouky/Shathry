@@ -51,6 +51,11 @@ h4 {
   text-decoration-color: var(--secondary-color);
 }
 
+.form-check-input:checked {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
 .out-of-stock {
   color: var(--secondary-color);
   display: flex;
@@ -155,6 +160,22 @@ h4 {
   flex-direction: column;
   box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
   padding: 10px 20px;
+}
+.side-order-details .shipping-company {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.side-order-details .shipping-company label {
+  display: flex;
+  align-items: center;
+}
+.side-order-details .shipping-company label .myimg {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  max-width: 65px;
+  margin-bottom: 0;
 }
 .side-order-details .coupon {
   display: flex;
@@ -1295,7 +1316,7 @@ h4 {
 }
 
 .devolum-banner .banner {
-  max-height: 330px;
+  max-height: 600px;
 }
 .devolum-banner .banner img {
   width: 100%;
@@ -2218,10 +2239,13 @@ h4 {
   box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
   border-radius: 3px;
   padding: 10px;
+  margin-bottom: 30px;
 }
 .devolum-cart .mycart .card-cart {
-  border-bottom: 1px solid var(--border-color);
   padding: 20px 0;
+}
+.devolum-cart .mycart .card-cart:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
 }
 .devolum-cart .mycart .card-cart .product-title {
   display: flex;
@@ -2848,15 +2872,26 @@ h4 {
   padding: 20px;
   margin-bottom: 30px;
 }
-.devolum-shipping .shipping .label-badge {
+.devolum-shipping .shipping .choose-address {
   display: flex;
   align-items: center;
 }
-.devolum-shipping .shipping .label-badge .my-badge2 {
+.devolum-shipping .shipping .choose-address .myradio-btn {
+  -webkit-margin-end: 25px;
+          margin-inline-end: 25px;
+}
+.devolum-shipping .shipping .choose-address .myradio-btn .form-check-input[type=radio] {
+  border-color: var(--third-color);
+}
+.devolum-shipping .shipping .choose-address .myaddress .label-badge {
+  display: flex;
+  align-items: center;
+}
+.devolum-shipping .shipping .choose-address .myaddress .label-badge .my-badge2 {
   background-color: var(--second-bg-color);
   color: var(--secondary-color);
   border-radius: 3px;
-  padding: 7px 15px;
+  padding: 7px;
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 0;
@@ -2865,7 +2900,8 @@ h4 {
 }
 .devolum-shipping .shipping span {
   color: var(--sale-color);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 .devolum-shipping .shipping div {
   color: var(--text-color);
