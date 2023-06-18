@@ -144,6 +144,65 @@ h4 {
   margin-top: 13px;
 }
 
+.all-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-btns .sign-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  width: 260px;
+  height: 48px;
+  border: none;
+}
+.all-btns .sign-up-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--basic-color);
+}
+.all-btns .google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--basic-color);
+  border-radius: 3px;
+  width: 260px;
+  height: 48px;
+  border: none;
+}
+.all-btns .google-btn i {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.all-btns .google-btn:hover {
+  color: var(--basic-color);
+  background-color: var(--second-hover-color);
+}
+.all-btns span {
+  color: var(--sale-color);
+}
+.all-btns a {
+  color: var(--primary-color);
+}
+.all-btns a:hover {
+  color: var(--second-hover-color);
+}
+.all-btns .all-rights {
+  font-size: 14px;
+}
+.all-btns .all-rights a {
+  color: var(--secondary-color);
+}
+.all-btns .all-rights a:hover {
+  color: var(--hover-color);
+}
+
 .my-badge {
   background-color: var(--badge-bg);
   color: var(--badge-text) !important;
@@ -2141,64 +2200,6 @@ h4 {
   left: 15px;
   color: var(--sale-color);
 }
-.devolum-sign-up .sign-up .all-btns {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.devolum-sign-up .sign-up .all-btns .sign-up-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondary-color);
-  color: var(--basic-color);
-  border-radius: 3px;
-  width: 260px;
-  height: 48px;
-  border: none;
-}
-.devolum-sign-up .sign-up .all-btns .sign-up-btn:hover {
-  background-color: var(--hover-color);
-  color: var(--basic-color);
-}
-.devolum-sign-up .sign-up .all-btns .google-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: var(--basic-color);
-  border-radius: 3px;
-  width: 260px;
-  height: 48px;
-  border: none;
-}
-.devolum-sign-up .sign-up .all-btns .google-btn i {
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
-}
-.devolum-sign-up .sign-up .all-btns .google-btn:hover {
-  color: var(--basic-color);
-  background-color: var(--second-hover-color);
-}
-.devolum-sign-up .sign-up .all-btns span {
-  color: var(--sale-color);
-}
-.devolum-sign-up .sign-up .all-btns a {
-  color: var(--primary-color);
-}
-.devolum-sign-up .sign-up .all-btns a:hover {
-  color: var(--second-hover-color);
-}
-.devolum-sign-up .sign-up .all-btns .all-rights {
-  font-size: 14px;
-}
-.devolum-sign-up .sign-up .all-btns .all-rights a {
-  color: var(--secondary-color);
-}
-.devolum-sign-up .sign-up .all-btns .all-rights a:hover {
-  color: var(--hover-color);
-}
 @media (max-width: 750px) {
   .devolum-sign-up .sign-up {
     margin: 5px;
@@ -2960,6 +2961,13 @@ h4 {
 .devolum-payment .card-payment .payment-img {
   max-width: 90px;
 }
+.devolum-payment .form-select:focus {
+  box-shadow: 3px 4px 30px rgba(237, 237, 237, 0.5);
+  border-color: var(--sale-color);
+}
+.devolum-payment select:focus-visible {
+  outline: none;
+}
 .devolum-payment .payment-methods {
   width: 100%;
   display: flex;
@@ -3099,4 +3107,20 @@ h4 {
   font-weight: 600;
   font-size: 21px;
   border-radius: 3px;
+}
+
+.login-modal .modal-content {
+  border-radius: 6px;
+}
+.login-modal .modal-content .modal-body {
+  padding: 60px 30px;
+}
+.login-modal .modal-content .modal-body .form-floating input {
+  border-color: var(--sale-color);
+}
+.login-modal .modal-content .modal-body .form-floating label {
+  color: var(--sale-color);
+}
+.login-modal .modal-content .modal-body .form-floating .form-control:focus {
+  box-shadow: 1px 1px 9px 0px rgba(215, 43, 43, 0.5);
 }/*# sourceMappingURL=style.css.map */

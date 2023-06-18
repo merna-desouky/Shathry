@@ -1094,7 +1094,76 @@
                                 </div>
                             </div>
 
-                            <a href="#"> <button>شاهد المنتج</button></a>
+                            <a href="#">
+                                <button
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                                >
+                                    شاهد المنتج
+                                </button></a
+                            >
+                            <div
+                                class="modal login-modal fade"
+                                id="exampleModal"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    type="email"
+                                                    class="form-control"
+                                                    id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                />
+                                                <label for="floatingInput">
+                                                    البريد الالكتروني</label
+                                                >
+                                            </div>
+                                            <div class="form-floating mb-5">
+                                                <input
+                                                    type="password"
+                                                    class="form-control"
+                                                    id="floatingPassword"
+                                                    placeholder="Password"
+                                                />
+                                                <label for="floatingPassword">
+                                                    كلمه المرور</label
+                                                >
+                                            </div>
+                                            <div class="all-btns">
+                                                <button
+                                                    class="sign-up-btn mb-4"
+                                                    href="#"
+                                                >
+                                                    تسجيل دخول
+                                                </button>
+                                                <button
+                                                    class="google-btn mb-4"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-brands fa-google"
+                                                    ></i>
+                                                    تسجيل دخول بواسطة جوجل
+                                                </button>
+                                                <div class="have-account mb-3">
+                                                    <span>ليس لديك حساب؟</span>
+                                                    <a href="#">انشاء حساب</a>
+                                                </div>
+                                                <a
+                                                    class="as-guest mb-3"
+                                                    href="#"
+                                                    >المتابعة كزائر؟</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
