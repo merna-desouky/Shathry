@@ -32,6 +32,23 @@ var swiper1 = new Swiper(".mySwiper1", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
@@ -53,6 +70,23 @@ var swiper2 = new Swiper(".mySwiper2", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
 });
 
 var swiper3 = new Swiper(".mySwiper3", {
@@ -61,6 +95,7 @@ var swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+
 });
 var swiper4 = new Swiper(".mySwiper4", {
     loop: true,
@@ -72,6 +107,23 @@ var swiper4 = new Swiper(".mySwiper4", {
     thumbs: {
         swiper: swiper3,
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
 });
 var swiper5 = new Swiper(".mySwiper5", {
     loop: true,
@@ -83,45 +135,26 @@ var swiper5 = new Swiper(".mySwiper5", {
     thumbs: {
         swiper: swiper3,
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
 });
 
-//count down function
 
-if (document.getElementsByClassName("count-card").length > 0) {
-    const newDate = new Date("June 31 23 00:16:00").getTime();
-    const countdown = setInterval(() => {
-        const date = new Date().getTime();
-        const diff = newDate - date;
-
-        const days = Math.floor(
-            (diff % (1000 * 60 * 60 * 24 * (365.25 / 12))) /
-                (1000 * 60 * 60 * 24)
-        );
-        const hours = Math.floor(
-            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-        document.querySelector(".seconds").innerHTML =
-            seconds < 10 ? "0" + seconds : seconds;
-        document.querySelector(".minutes").innerHTML =
-            minutes < 10 ? "0" + minutes : minutes;
-        document.querySelector(".hours").innerHTML =
-            hours < 10 ? "0" + hours : hours;
-        document.querySelector(".days").innerHTML =
-            days < 10 ? "0" + days : days;
-
-        if (diff < 0) {
-            clearInterval(countdown);
-            var numbers = document.querySelectorAll(".count-card");
-            for (var i = 0; i < numbers.length; i++) {
-                numbers[i].style.display = "none";
-            }
-            document.querySelector(".expire-msg").style.display = "flex";
-        }
-    }, 1000);
-}
 //count down function
 
 //search input
@@ -196,6 +229,7 @@ plusBtn.addEventListener("click", () => {
     countNum += 1;
     count.innerHTML = countNum;
 });
+
 
 //counter
 

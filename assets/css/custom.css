@@ -1,0 +1,71 @@
+.devolum-single-product .content-of-single-product .mybtns {
+    width: 100% ;
+}
+.devolum-footer {
+	border-top: 1px solid #eee;
+	padding-top: 40px;
+}
+.devolum-intro .count-down .mySwiper2 .swiper-slide img {
+	max-height: 200px;
+	width: auto;
+}
+.devolum-footer .content .social-icons a:hover {
+	border-color: var(--secondary-color);
+}
+.side-order-details .continue-btn {
+	border: 0;
+}
+.spinner-border.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  }
+
+  .devolum-loading {
+    background: #ffffff8a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    cursor: progress;
+  }
+  .border-product {
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.footer-logo img {
+	max-width: 200px;
+	height: auto;
+}
+.devolum-categories-view .catg-content .catg-card .content .img-product .new {
+	background-color: var(--secondary-color);
+	color: var(--bg-color);
+}
+.devolum-order-product .order-product {
+	margin-bottom: 15px;
+}
+.order-name img {
+	min-width: 70px;
+	height: auto;
+}
+.order-name span {
+	padding: 0 10px;
+}
+.visa-master
+{
+    max-height: 50px;
+
+}
+.devolum-categories .categories {
+	justify-content: center;
+}
+.categories li {
+	margin: 0 5px !important;
+}
+.join-btn .spinner-border {
+	--bs-spinner-width: 1rem;
+	--bs-spinner-height: 1rem;
+	--bs-spinner-border-width:0.15em;
+}
