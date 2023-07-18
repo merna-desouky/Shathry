@@ -3520,4 +3520,73 @@ h4 {
   .partners-reviews .partners-card {
     padding: 15px;
   }
+}
+
+.devolum-branches .branches-list {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 3px;
+  padding: 20px;
+}
+.devolum-branches .branches-list .branch-card {
+  display: flex;
+  background-color: var(--bg-color);
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.devolum-branches .branches-list .branch-card .myimg {
+  width: 100px;
+  height: 100px;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.devolum-branches .branches-list .branch-card .myimg img {
+  width: 100%;
+}
+.devolum-branches .branches-list .branch-card .branch-location {
+  display: flex;
+  flex-direction: column;
+}
+.devolum-branches .branches-list .branch-card .branch-location div {
+  font-size: 15px;
+  font-weight: 500;
+}
+.devolum-branches .branches-list .branch-card .branch-location span {
+  color: var(--third-color);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.devolum-branches .branches-list .branch-card .branch-location a {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+.devolum-branches .branches-list .branch-card .branch-location a i {
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+@media (max-width: 410px) {
+  .devolum-branches .branches-list .branch-card .branch-location div,
+  .devolum-branches .branches-list .branch-card .branch-location a {
+    font-size: 13px;
+  }
+}
+
+html[dir=ltr] .fa-arrow-left {
+  transform: rotate(180deg);
+}
+html[dir=ltr] .devolum-vendor .vendor-profile .profile {
+  right: auto;
+  left: 50px;
+}
+html[dir=ltr] .vendor-main .container-fluid .content {
+  transform: translate(15%, -50%);
+}
+html[dir=ltr] .add-comment i {
+  -webkit-padding-end: 5px;
+          padding-inline-end: 5px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }/*# sourceMappingURL=style.css.map */

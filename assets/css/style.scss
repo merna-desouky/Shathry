@@ -3668,3 +3668,72 @@ h4 {
         }
     }
 }
+
+.devolum-branches {
+    .branches-list {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 3px;
+        padding: 20px;
+        .branch-card {
+            display: flex;
+            background-color: var(--bg-color);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 20px;
+            .myimg {
+                width: 100px;
+                height: 100px;
+                margin-inline-end: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                }
+            }
+            .branch-location {
+                display: flex;
+                flex-direction: column;
+                div {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                span {
+                    color: var(--third-color);
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+                a {
+                    font-size: 14px;
+                    color: var(--secondary-color);
+                    i {
+                        margin-inline-start: 8px;
+                    }
+                }
+                @media (max-width: 410px) {
+                    div,
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+html[dir="ltr"] {
+    .fa-arrow-left {
+        transform: rotate(180deg);
+    }
+    .devolum-vendor .vendor-profile .profile {
+        right: auto;
+        left: 50px;
+    }
+    .vendor-main .container-fluid .content {
+        transform: translate(15%, -50%);
+    }
+    .add-comment i {
+        padding-inline-end: 5px;
+        padding-inline-start: 0;
+    }
+}
