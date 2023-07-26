@@ -911,12 +911,14 @@
                                 <li class="breadcrumb-item">
                                     <a href="#">الرئيسية</a>
                                 </li>
-
+                                <li class="breadcrumb-item">
+                                    <a href="#">حسابي</a>
+                                </li>
                                 <li
                                     class="breadcrumb-item active"
                                     aria-current="page"
                                 >
-                                    حسابي
+                                    المسوق
                                 </li>
                             </ol>
                         </div>
@@ -926,468 +928,226 @@
         </div>
         <!-- end of bread crumb -->
 
-        <section class="devolum-profile-tabs">
+        <section class="devolum-coupons">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="myprofile-tabs">
-                            <div class="name">
-                                <span class="customer-name">أهلاً sara</span
-                                ><span class="customer-email"
-                                    >saraaa.alii77@gmail.com</span
-                                >
+                        <div class="my-coupons">
+                            <div class="email-copy">
+                                <div class="copy1">
+                                    mail.google.com/mail/u/0/#inbox
+                                </div>
+
+                                <button onclick="copy1()">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
                             </div>
-                            <div class="vertical">
-                                <div></div>
-                                <div></div>
+                            <span class="or">- او -</span>
+                            <div class="code-copy">
+                                <div class="copy2">#xECD3;</div>
+
+                                <button onclick="copy2()">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
                             </div>
-                            <ul
-                                class="nav nav-pills mb-3"
-                                id="pills-tab"
-                                role="tablist"
-                            >
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link active"
-                                        id="pills-account-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-account"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="pills-account"
-                                        aria-selected="true"
-                                    >
-                                        <i class="fa-regular fa-user"></i> حسابي
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link"
-                                        id="pills-orders-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-orders"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="pills-orders"
-                                        aria-selected="false"
-                                    >
-                                        <i class="fa-solid fa-truck-fast"></i>
-                                        الطلبات
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link"
-                                        id="pills-fav-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-fav"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="pills-fav"
-                                        aria-selected="false"
-                                    >
-                                        <i class="fa-solid fa-user-gear"></i>
-                                        المسوق
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link"
-                                        id="pills-address-tab"
-                                        data-bs-toggle="pill"
-                                        data-bs-target="#pills-address"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="pills-address"
-                                        aria-selected="false"
-                                    >
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        عناويني
-                                    </button>
-                                </li>
-                            </ul>
+                            <div class="commission-copy">
+                                <div>
+                                    <div class="copy3">546146</div>
+                                    : commission
+                                </div>
+                                <button onclick="copy3()">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="discount-copy">
+                                <div>
+                                    <div class="copy4">50%</div>
+                                    : Discount
+                                </div>
+                                <button onclick="copy4()">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="devolum-profile-content">
+
+        <section class="devolum-customers-info">
+            <div class="container-fluid">
+                <div class="row gy-5">
+                    <div class="col-md-3 col-12">
+                        <div class="info-card">
+                            <div class="myimg">
+                                <i class="fa-regular fa-hand-pointer"></i>
+                            </div>
+                            <div class="info">
+                                <span>النقرات</span>
+                                <div class="number">51</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="info-card">
+                            <div class="myimg">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div class="info">
+                                <span>النقرات</span>
+                                <div class="number">51</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="info-card">
+                            <div class="myimg">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+                            <div class="info">
+                                <span>المدفوعات</span>
+                                <div class="number">51</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                        <div class="info-card">
+                            <div class="myimg">
+                                <i class="fa-regular fa-hand-pointer"></i>
+                            </div>
+                            <div class="info">
+                                <span>النقرات</span>
+                                <div class="number">51</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="devolum-chart">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div
-                                class="tab-pane fade show active"
-                                id="pills-account"
-                                role="tabpanel"
-                                aria-labelledby="pills-account-tab"
-                                tabindex="0"
-                            >
-                                <div class="myaccount">
-                                    <div class="myinput">
-                                        <label>الاسم</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                placeholder="sara"
-                                            />
-                                            <span class="edit-icon"
-                                                ><i
-                                                    class="fa-regular fa-pen-to-square"
-                                                ></i
-                                            ></span>
-                                        </div>
-                                    </div>
-                                    <div class="myinput">
-                                        <label>البريد الإلكتروني</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                placeholder="test@gmail.com"
-                                            />
-                                            <span class="edit-icon"
-                                                ><i
-                                                    class="fa-regular fa-pen-to-square"
-                                                ></i
-                                            ></span>
-                                        </div>
-                                    </div>
-                                    <div class="myinput">
-                                        <label>رقم الجوال</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                placeholder="21440014776323"
-                                            />
-                                            <span class="edit-icon"
-                                                ><i
-                                                    class="fa-regular fa-pen-to-square"
-                                                ></i
-                                            ></span>
-                                        </div>
-                                    </div>
-                                    <div class="save-btn">
-                                        <a href="#">حفظ</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="pills-orders"
-                                role="tabpanel"
-                                aria-labelledby="pills-orders-tab"
-                                tabindex="0"
-                            >
-                                <div class="all-orders">
-                                    <div class="order">
-                                        <div class="single-cell">
-                                            <div>
-                                                رقم الطلب : AEEGHDE1754541
-                                            </div>
-                                            <span
-                                                >مكيف هاير 22000 وحدة سبليت حار
-                                                بار-HSU-24HPB13/RT(T3)F</span
-                                            >
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>السعر</span>
-                                            <div>2900 ر.س</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>عدد العناصر</span>
-                                            <div>4</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span> طريقة الدفع</span>
-                                            <div>فيزا</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>حالة الطلب </span>
-                                            <div class="my-badge">معلق</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span> العنوان</span>
-                                            <div>
-                                                المملكة العربية السعودية,
-                                                الرياض, 12747885DFSCCW1
-                                            </div>
-                                        </div>
-                                        <div class="delete">
-                                            <span
-                                                ><i
-                                                    class="fa-regular fa-trash-can"
-                                                ></i
-                                            ></span>
-                                        </div>
-                                    </div>
-                                    <div class="order">
-                                        <div class="single-cell">
-                                            <div>
-                                                رقم الطلب : AEEGHDE1754541
-                                            </div>
-                                            <span
-                                                >مكيف هاير 22000 وحدة سبليت حار
-                                                بار-HSU-24HPB13/RT(T3)F</span
-                                            >
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>السعر</span>
-                                            <div>2900 ر.س</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>عدد العناصر</span>
-                                            <div>4</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span> طريقة الدفع</span>
-                                            <div>فيزا</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>حالة الطلب </span>
-                                            <div class="my-badge">معلق</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span> العنوان</span>
-                                            <div>
-                                                المملكة العربية السعودية,
-                                                الرياض, 12747885DFSCCW1
-                                            </div>
-                                        </div>
-                                        <div class="delete">
-                                            <span
-                                                ><i
-                                                    class="fa-regular fa-trash-can"
-                                                ></i
-                                            ></span>
-                                        </div>
-                                    </div>
-                                    <div class="order">
-                                        <div class="single-cell">
-                                            <div>
-                                                رقم الطلب : AEEGHDE1754541
-                                            </div>
-                                            <span
-                                                >مكيف هاير 22000 وحدة سبليت حار
-                                                بار-HSU-24HPB13/RT(T3)F</span
-                                            >
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>السعر</span>
-                                            <div>2900 ر.س</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>عدد العناصر</span>
-                                            <div>4</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span> طريقة الدفع</span>
-                                            <div>فيزا</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span>حالة الطلب </span>
-                                            <div class="my-badge">معلق</div>
-                                        </div>
-                                        <div class="single-cell">
-                                            <span> العنوان</span>
-                                            <div>
-                                                المملكة العربية السعودية,
-                                                الرياض, 12747885DFSCCW1
-                                            </div>
-                                        </div>
-                                        <div class="delete">
-                                            <span
-                                                ><i
-                                                    class="fa-regular fa-trash-can"
-                                                ></i
-                                            ></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="pills-fav"
-                                role="tabpanel"
-                                aria-labelledby="pills-fav-tab"
-                                tabindex="0"
-                            >
-                                <div class="empty-orders">
-                                    <img
-                                        src="../assets/imgs/vendor-profile.svg"
-                                        alt="empty-cart"
-                                    />
-                                    <span>
-                                        لكي تكون مسوق علي موقع الشثري اضغط علي
-                                        المتابعة كمسوق</span
+                        <div class="filter">
+                            <h4>الأداء حسب المنتجات</h4>
+                            <div class="mydropdowns">
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
                                     >
-                                    <a
-                                        class="shop-btn"
-                                        href="vendor-coupons.html"
+                                        جميع المنتجات
+                                    </button>
+                                    <ul
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton1"
                                     >
-                                        المتابعة كمسوق</a
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
                                     >
+                                        التحويلات
+                                    </button>
+                                    <ul
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton1"
+                                    >
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        اخر 7 ايام
+                                    </button>
+                                    <ul
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton1"
+                                    >
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div
-                                class="tab-pane fade"
-                                id="pills-address"
-                                role="tabpanel"
-                                aria-labelledby="pills-address-tab"
-                                tabindex="0"
-                            >
-                                <div class="address">
-                                    <div class="address-card">
-                                        <div class="row gy-md-0 gy-5">
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span class="label-badge">
-                                                        العنوان
-                                                        <span class="my-badge2">
-                                                            عنوان الشحن الرئيسي
-                                                        </span>
-                                                    </span>
-                                                    <div>
-                                                        المملكة العربية
-                                                        السعودية, الرياض,
-                                                        12747885DFSCCW1
-                                                    </div>
+                        </div>
+                        <div class="mychart">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mytable">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>المدفوعات</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">الشهر</th>
+                                        <th scope="col">المبلغ</th>
+                                        <th scope="col">الحالة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>فبراير</td>
+                                        <td>3.52$</td>
+                                        <td>
+                                            <div>
+                                                <div class="my-badge">
+                                                    تم الدفع
                                                 </div>
                                             </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span>الاسم</span>
-                                                    <div>sara</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>ديسمبر</td>
+                                        <td>12.62$</td>
+                                        <td>
+                                            <div>
+                                                <div class="my-badge">
+                                                    تم الدفع
                                                 </div>
                                             </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span>رقم الهاتف</span>
-                                                    <div>54110014114444</div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span
-                                                        ><i
-                                                            class="fa-regular fa-pen-to-square"
-                                                        ></i
-                                                    ></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="address-card">
-                                        <div class="row gy-md-0 gy-5">
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span class="label-badge">
-                                                        العنوان
-                                                    </span>
-                                                    <div>
-                                                        المملكة العربية
-                                                        السعودية, الرياض,
-                                                        12747885DFSCCW1
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span>الاسم</span>
-                                                    <div>sara</div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span>رقم الهاتف</span>
-                                                    <div>54110014114444</div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span
-                                                        ><i
-                                                            class="fa-regular fa-pen-to-square"
-                                                        ></i
-                                                    ></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="address-card">
-                                        <div class="row gy-md-0 gy-5">
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span class="label-badge">
-                                                        العنوان
-                                                        <span class="my-badge2">
-                                                            عنوان الشحن الرئيسي
-                                                        </span>
-                                                    </span>
-                                                    <div>
-                                                        المملكة العربية
-                                                        السعودية, الرياض,
-                                                        12747885DFSCCW1
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span>الاسم</span>
-                                                    <div>sara</div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span>رقم الهاتف</span>
-                                                    <div>54110014114444</div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="col-md-3 d-flex justify-content-md-center"
-                                            >
-                                                <div class="address-cell">
-                                                    <span
-                                                        ><i
-                                                            class="fa-regular fa-pen-to-square"
-                                                        ></i
-                                                    ></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="add-new-address">
-                                            <a
-                                                href="new-address.html"
-                                                class="new-address-btn"
-                                                >اضافة عنوان جديد</a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -1503,6 +1263,7 @@
         <!-- js for bootstrap -->
         <script async src="https://static.addtoany.com/menu/page.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="../assets/js/script.js"></script>
     </body>

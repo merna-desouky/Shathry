@@ -35,20 +35,20 @@ var swiper1 = new Swiper(".mySwiper1", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1,
-          spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 1,
-          spaceBetween: 30
+            slidesPerView: 1,
+            spaceBetween: 30,
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 1,
-          spaceBetween: 40
-        }
-      }
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+    },
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
@@ -73,20 +73,20 @@ var swiper2 = new Swiper(".mySwiper2", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1,
-          spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 1,
-          spaceBetween: 30
+            slidesPerView: 1,
+            spaceBetween: 30,
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 1,
-          spaceBetween: 40
-        }
-      }
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+    },
 });
 
 var swiper3 = new Swiper(".mySwiper3", {
@@ -95,7 +95,6 @@ var swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-
 });
 var swiper4 = new Swiper(".mySwiper4", {
     loop: true,
@@ -110,20 +109,20 @@ var swiper4 = new Swiper(".mySwiper4", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1,
-          spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 1,
-          spaceBetween: 30
+            slidesPerView: 1,
+            spaceBetween: 30,
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 1,
-          spaceBetween: 40
-        }
-      }
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+    },
 });
 var swiper5 = new Swiper(".mySwiper5", {
     loop: true,
@@ -138,22 +137,21 @@ var swiper5 = new Swiper(".mySwiper5", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1,
-          spaceBetween: 20
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 1,
-          spaceBetween: 30
+            slidesPerView: 1,
+            spaceBetween: 30,
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 1,
-          spaceBetween: 40
-        }
-      }
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+    },
 });
-
 
 //count down function
 
@@ -220,18 +218,47 @@ let plusBtn = document.getElementById("plus-btn");
 let countNum = 0;
 // count.innerHTML = countNum;
 
-minusBtn.addEventListener("click", () => {
-    countNum <= 0 ? (countNum = 0) : (countNum -= 1);
-    count.innerHTML = countNum;
-});
-
-plusBtn.addEventListener("click", () => {
-    countNum += 1;
-    count.innerHTML = countNum;
-});
-
-
 //counter
+
+function copy1() {
+    const element = document.querySelector(".copy1");
+
+    const textToCopy = element.innerText;
+    navigator.clipboard.writeText(textToCopy);
+}
+function copy2() {
+    const element = document.querySelector(".copy2");
+
+    const textToCopy = element.innerText;
+    navigator.clipboard.writeText(textToCopy);
+}
+
+//chart
+
+const ctx = document.getElementById("myChart");
+
+new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
+        datasets: [
+            {
+                label: "# of Votes",
+                data: [-100, 12, 19, 3, 5, 2, 3],
+                borderWidth: 1,
+            },
+        ],
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+            },
+        },
+    },
+});
+
+//chart
 
 // var starRating = document.querySelectorAll(".fa-star"),
 //     ratingTotal = document.querySelectorAll(".rating-total");
